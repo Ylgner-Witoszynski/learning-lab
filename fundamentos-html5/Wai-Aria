@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atributos de Acessibilidade WAI-ARIA</title>
+</head>
+
+<body>
+
+  <h1>Atributos de Acessibilidade WAI-ARIA</h1>
+
+  <!-- 🌟 Caixa de informação com ARIA -->
+  <div role="alert" aria-labelledby="infoHeading" aria-describedby="infoContent">
+    <!-- role="alert" indica que é uma mensagem importante -->
+    <!-- aria-labelledby conecta o título da mensagem -->
+    <!-- aria-describedby conecta o conteúdo da mensagem -->
+
+    <h2 id="infoHeading">Informação Importante</h2>
+    <p id="infoContent">Esta é uma mensagem informativa para os usuários.</p>
+  </div>
+
+  <!-- 🔹 Formulário com campos obrigatórios e ARIA -->
+  <form action="#" method="post">
+    <div>
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required 
+             aria-required="true" aria-label="Campo de Nome">
+      <!-- aria-required="true" informa que o campo é obrigatório -->
+      <!-- aria-label descreve o campo para leitores de tela -->
+      <br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required 
+             aria-required="true" aria-label="Campo de Email">
+      <br>
+
+      <label for="message">Mensagem:</label>
+      <textarea id="message" name="message" required 
+                aria-required="true" aria-label="Campo de Mensagem"></textarea>
+    </div>
+
+    <!-- 🔹 Mensagens dinâmicas de status -->
+    <div role="status" aria-live="polite">
+      <!-- aria-live="polite" indica atualização que não interrompe o usuário -->
+      <p>Mensagem enviada com sucesso!</p>
+    </div>
+
+    <div role="status" aria-live="assertive">
+      <!-- aria-live="assertive" indica atualização urgente -->
+      <p>Erro ao enviar a mensagem. Por favor, verifique os campos obrigatórios.</p>
+    </div>
+
+    <button type="submit" aria-label="Enviar Formulário">Enviar</button>
+  </form>
+
+  <!-- 💡 Dicas de acessibilidade -->
+  <p>
+    ✅ Use <strong>role</strong> para definir a função do elemento.<br>
+    ✅ Use <strong>aria-label</strong> ou <strong>aria-labelledby</strong> para descrever elementos para leitores de tela.<br>
+    ✅ Use <strong>aria-live</strong> para indicar atualizações dinâmicas.<br>
+    ✅ Campos obrigatórios devem usar <strong>aria-required="true"</strong>.<br>
+    ✅ Sempre teste sua página com leitores de tela para garantir acessibilidade.
+  </p>
+
+</body>
+</html>
