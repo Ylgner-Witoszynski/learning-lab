@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+
+<body>
+    <!-- 🌟 Cabeçalho principal -->
+    <h1>Trabalhando com Links</h1>
+
+    <!-- 🔹 Navegação entre arquivos -->
+    <div>
+        <p>Navegue entre os arquivos das aulas:</p>
+        <a href="/titulos.html">Primeira Página</a> |
+        <a href="/div e span/index.html">div e span</a> |
+        <a href="/imagens/index.html">Aula: Imagens</a> |
+        <!-- Explicação: Esses links apontam para outros arquivos HTML dentro do projeto -->
+    </div>
+
+    <!-- 🔹 Navegação interna (âncoras) -->
+    <div>
+        <p>Navegue entre seções dessa página:</p>
+        <a href="#titulo-1">Título 1</a> |
+        <a href="#titulo-2">Título 2</a> |
+        <a href="#titulo-3">Título 3</a> |
+        <a href="#titulo-4">Título 4</a> |
+        <a href="#titulo-5">Título 5</a> |
+        <!-- Explicação: Esses links levam a seções específicas da mesma página usando IDs -->
+    </div>
+
+    <!-- 🔹 Link externo -->
+    <p>
+        Acessar a página do
+        <a href="https://google.com" target="_blank">Google</a>.
+        <!-- Explicação: target="_blank" abre o link em uma nova aba -->
+    </p>
+
+    <!-- 🔹 Conteúdo da página com IDs para navegação interna -->
+    <h2 id="titulo-1">Título 1</h2>
+    <p>Conteúdo do Título 1...</p>
+
+    <h2 id="titulo-2">Título 2</h2>
+    <p>Conteúdo do Título 2...</p>
+
+    <h2 id="titulo-3">Título 3</h2>
+    <p>Conteúdo do Título 3...</p>
+
+    <h2 id="titulo-4">Título 4</h2>
+    <p>Conteúdo do Título 4...</p>
+
+    <h2 id="titulo-5">Título 5</h2>
+    <p>Conteúdo do Título 5...</p>
+
+    <h2 id="titulo-6">Título 6</h2>
+    <p>Conteúdo do Título 6...</p>
+
+    <h2 id="titulo-7">Título 7</h2>
+    <p>Conteúdo do Título 7...</p>
+
+    <!-- 💡 Dicas -->
+    <p>
+        ✅ <strong>Links internos</strong> usam IDs para navegar dentro da mesma página.<br>
+        ✅ <strong>Links externos</strong> podem abrir em nova aba usando <code>target="_blank"</code>.<br>
+        ✅ <strong>Links para arquivos</strong> ajudam a organizar conteúdos de várias páginas dentro do projeto.
+    </p>
+
+</body>
+
+</html>
