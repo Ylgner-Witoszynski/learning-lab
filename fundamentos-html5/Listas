@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aninhamento de Listas</title>
+</head>
+<body>
+
+    <!-- 🌟 Cabeçalho principal -->
+    <h1>Aninhamento de Listas em HTML</h1>
+
+    <!-- 🔹 Listas ordenadas (ol) -->
+    <h2>Bolos</h2>
+    <ol>
+        <li>
+            <strong>Bolos Tradicionais</strong>
+            <!-- Lista interna aninhada -->
+            <ol>
+                <li>Bolo de Chocolate Fofinho</li>
+                <li>Bolo de Cenoura com Cobertura de Chocolate</li>
+                <li>Bolo de Limão com Glacê de Limão</li>
+            </ol>
+        </li>
+        <li>
+            <strong>Bolos de Festas</strong>
+            <ol>
+                <li>Bolo de Aniversário com Recheio de Frutas</li>
+                <li>Bolo de Casamento com Flores de Açúcar</li>
+                <li>Bolo de Natal com Frutas Cristalizadas</li>
+            </ol>
+        </li>
+    </ol>
+
+    <!-- 🔹 Listas não ordenadas (ul) -->
+    <h2>Sobremesas</h2>
+    <ul>
+        <li>
+            <strong>Sobremesas Geladas</strong>
+            <!-- Lista interna aninhada -->
+            <ul>
+                <li>Sorvete de Chocolate Caseiro</li>
+                <li>Pudim de Leite Condensado</li>
+                <li>Gelatina Colorida com Creme</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Sobremesas Especiais</strong>
+            <ul>
+                <li>Mousse de Maracujá com Calda de Chocolate</li>
+                <li>Cheesecake de Morango</li>
+                <li>Pavê de Chocolate com Biscoitos</li>
+            </ul>
+        </li>
+    </ul>
+
+    <!-- 💡 Dicas -->
+    <p>
+        ✅ <strong>&lt;ol&gt;</strong>: cria listas numeradas.<br>
+        ✅ <strong>&lt;ul&gt;</strong>: cria listas com marcadores (bullet points).<br>
+        ✅ <strong>&lt;li&gt;</strong>: representa cada item da lista.<br>
+        ✅ Listas podem ser <strong>aninhadas</strong> dentro de outras listas para criar hierarquia.<br>
+        ✅ Use <strong>&lt;strong&gt;</strong> para destacar títulos de categorias dentro das listas.
+    </p>
+
+</body>
+</html>
