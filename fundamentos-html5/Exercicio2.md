@@ -1,5 +1,9 @@
 # Exercício: Lista de Álbuns e Músicas em HTML
 
+## 👤 Autor
+**Ylgner Witoszynski Santana**
+
+
 ## 🎯 Objetivo
 Criar um arquivo HTML que organize seus álbuns de música favoritos de forma clara e visual.
 
