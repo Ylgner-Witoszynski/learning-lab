@@ -49,6 +49,8 @@ cd aprendendo-programacao/JavaScript/01-variaveis-e-tipos
 
 3.Abra os arquivos no VS Code para ver os exemplos e comentários.
 
+---
+
 💡 Dica
 Se você também está aprendendo programação, pode:
 
@@ -61,6 +63,7 @@ Criar seus próprios exercícios a partir das ideias aqui.
 ---
 
 ###🤝 Contribua
+
 Quer colaborar com melhorias ou novos exemplos?
 Sinta-se à vontade para:
 
@@ -92,11 +95,6 @@ GitHub: https://github.com/Ylgner-Witoszynski
 📅 Última atualização: Outubro de 2025
 
 📚 Em constante evolução — novos conteúdos serão adicionados conforme meus estudos avançam.
-
----
-
-### ✅ Dica final
-Quando você subir isso no GitHub, o site **renderiza o markdown automaticamente**, deixando tudo bonitinho com ícones, listas e seções.
 
 ---
 
