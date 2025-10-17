@@ -1,0 +1,77 @@
+/* ======== ESTILOS GERAIS DA PÁGINA ======== */
+body {
+    /* Define uma imagem de fundo para toda a página */
+    background-image: url("https://codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg");
+
+    /* Faz a imagem ocupar todo o espaço da tela */
+    background-size: cover;
+}
+
+/* ======== CABEÇALHO ======== */
+header {
+    /* Define a cor de fundo do cabeçalho */
+    background-color: #333;
+
+    /* Define a cor do texto dentro do cabeçalho */
+    color: #fff;
+}
+
+/* ======== CONTEÚDO PRINCIPAL ======== */
+main {
+    /* Cor de fundo da área principal */
+    background-color: #e5e5e5;
+
+    /* Define a largura da borda */
+    border-width: 4px;
+
+    /* Define a cor da borda */
+    border-color: #1c1a1d;
+
+    /* Define o estilo da borda (linha sólida) */
+    border-style: solid;
+}
+
+/* ======== BOX 1 ======== */
+.box1 {
+    /* Cor de fundo verde */
+    background-color: #169436;
+
+    /* Borda tracejada (dashed), com 2px de espessura */
+    border: dashed 2px #1c1a1d;
+
+    /* Altura e largura do box */
+    height: 64px;
+    width: 320px;
+}
+
+/* ======== BOX 2 ======== */
+.box2 {
+    /* Cria um fundo com gradiente (transição de cores) */
+    background-image: linear-gradient(45deg, #2c2c2d, #f64348);
+
+    /* Adiciona uma borda pontilhada (dotted) somente na parte superior */
+    border-top: 4px dotted #1c1a1d;
+
+    /* Define altura e largura */
+    height: 64px;
+    width: 320px;
+}
+
+/* ======== BOX 3 ======== */
+.box3 {
+    /* Fundo azul sólido */
+    background-color: #0077ff;
+
+    /* Borda simples (solid), com 2px de espessura */
+    border: 2px solid #1c1a1d;
+
+    /* Arredonda apenas o canto superior direito */
+    border-top-right-radius: 40px;
+
+    /* Arredonda apenas o canto inferior esquerdo */
+    border-bottom-left-radius: 40px;
+
+    /* Altura e largura do box */
+    height: 64px;
+    width: 320px;
+}
