@@ -1,0 +1,41 @@
+/* 
+==================================================
+   ESTILOS GERAIS DAS CAIXAS (BOX MODEL)
+==================================================
+*/
+
+/* A classe .box é aplicada em todas as divs com esse nome */
+.box {
+  /* Define a cor de fundo da caixa */
+  background-color: #f64348;
+
+  /* Cria uma borda sólida ao redor da caixa */
+  border: 2px solid #1c1a1d;
+}
+
+/* 
+==================================================
+   MARGEM (margin) E PREENCHIMENTO (padding)
+==================================================
+*/
+
+/* 
+A margem (margin) é o espaço EXTERNO à caixa,
+ou seja, o espaço entre a caixa e os outros elementos.
+
+O preenchimento (padding) é o espaço INTERNO da caixa,
+entre o conteúdo (texto, imagem, etc.) e a borda.
+*/
+.box {
+  /* Margens — controlam o espaçamento externo */
+  margin-top: 30px;    /* Espaço acima da caixa */
+  margin-right: 40px;  /* Espaço à direita da caixa */
+  margin-bottom: 30px; /* Espaço abaixo da caixa */
+  margin-left: 40px;   /* Espaço à esquerda da caixa */
+
+  /* Preenchimento — controla o espaçamento interno */
+  padding-top: 10px;    /* Espaço interno no topo */
+  padding-right: 20px;  /* Espaço interno à direita */
+  padding-bottom: 10px; /* Espaço interno embaixo */
+  padding-left: 20px;   /* Espaço interno à esquerda */
+}
