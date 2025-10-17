@@ -1,0 +1,74 @@
+/* 
+=========================================
+Este arquivo mostra a diferença entre:
+- inline
+- block
+- inline-block
+=========================================
+*/
+
+/* 
+🔹 INLINE
+- Não quebra a linha (fica lado a lado com outros elementos)
+- Largura e altura são ajustadas automaticamente ao conteúdo
+- Só aceita margem e padding horizontais
+*/
+.inline {
+  display: inline;
+
+  /* Margens (laterais apenas são aplicadas) */
+  margin-left: 20px;
+  margin-right: 20px;
+
+  /* Padding (laterais apenas são aplicadas) */
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background-color: #169436;
+  color: white;
+  border: 2px solid #1c1a1d;
+}
+
+/* 
+🔸 BLOCK
+- Sempre quebra a linha
+- Ocupa toda a largura disponível
+- Aceita margens e paddings em todas as direções
+*/
+.block {
+  display: block;
+
+  /* Margem e espaçamento interno em todos os lados */
+  margin: 10px 20px;
+  padding: 10px 20px;
+
+  background-color: #0077ff;
+  color: white;
+  border: 2px solid #1c1a1d;
+}
+
+/* 
+🔹 INLINE-BLOCK
+- Não quebra a linha (como o inline)
+- Mas aceita definir altura, largura, margens e paddings verticais
+*/
+.inline-block {
+  display: inline-block;
+
+  margin: 10px;
+  padding: 10px 20px;
+
+  background-color: #f64348;
+  color: white;
+  border: 2px solid #1c1a1d;
+  border-radius: 8px; /* Deixando mais visual */
+}
+/* 💬 Dicas para os alunos:
+
+Experimente alterar o valor de display entre inline, block e inline-block para ver o comportamento de cada um.
+
+Adicione width e height a cada classe e veja quais tipos aceitam essas propriedades.
+
+Use a ferramenta Inspecionar Elemento (F12) no navegador para visualizar o box model de cada tipo. 
+*/
+/*
