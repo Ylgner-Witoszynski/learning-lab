@@ -1,59 +1,123 @@
+/*
+=============================================
+🎓 Aula: Unidades de Medida no CSS
+---------------------------------------------
+Este código mostra exemplos práticos de como
+diferentes unidades (px, em, rem, %, vh, vw)
+influenciam o tamanho dos elementos.
+=============================================
+*/
+
+/* 
+🧩 Reset básico 
+Remove margens e preenchimentos padrão dos elementos
+para garantir que o layout seja consistente em todos os navegadores.
+*/
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
+/* 
+🧭 Cabeçalho da página 
+Define um fundo escuro e texto branco para o título principal.
+*/
 header {
-    background-color: #232323;
-    color: #fff;
-    padding: 10px;
+  background-color: #232323;
+  color: #fff;
+  padding: 10px;
 }
 
+/* 
+📦 Seção principal 
+Serve como container dos exemplos (caixas).
+A altura de 100px ajuda a visualizar as unidades relativas (%).
+*/
 section {
-    background-color: #ddd;
-    height: 100px;
+  background-color: #ddd;
+  height: 100px;
+  text-align: center;
+  padding-top: 10px;
 }
 
+/* 
+🧱 Classe base "box" 
+Define aparência geral das caixas de exemplo.
+Todas as variações (px, em, %, vh, etc.) herdam este estilo.
+*/
 .box {
-    border: 1px solid #232323;
-    display: inline-block;
-    font-size: 16px;
-    margin-top: 20px;
-    width: 75px;
+  border: 1px solid #232323;
+  display: inline-block; /* mantém as caixas lado a lado */
+  font-size: 16px;
+  margin-top: 20px;
+  width: 75px;
+  text-align: center;
+  background-color: #f5f5f5;
 }
 
+/* 
+📏 Unidades de medida absolutas (px)
+Valor fixo em pixels, independente do tamanho da tela.
+*/
 .px {
-    height: 10px;
+  height: 10px; /* sempre terá 10 pixels de altura */
+  background-color: #00b894;
 }
 
-/* root element -> 16px * 3 = 48px */
+/* 
+🔢 rem → relativo ao tamanho da fonte do elemento raiz (html)
+Se o html tiver font-size: 16px → 3rem = 16px * 3 = 48px
+*/
 .rem {
-    height: 3rem;
+  height: 3rem;
+  background-color: #0984e3;
 }
 
+/* 
+🔤 em → relativo ao tamanho da fonte do elemento PAI
+Se font-size for 20px, então 1em = 20px.
+*/
 .em {
-    font-size: 20px;
-    padding: 1em;
+  font-size: 20px; /* aumenta a base de cálculo */
+  padding: 1em; /* padding depende da fonte do próprio elemento */
+  background-color: #6c5ce7;
 }
 
+/* 
+📈 % → relativo ao tamanho do elemento PAI
+No caso, as alturas são baseadas em "section" (que tem 100px de altura).
+*/
 .prcnt-33 {
-    height: 33%;
+  height: 33%; /* 33% de 100px = 33px */
+  background-color: #00cec9;
 }
 
 .prcnt-66 {
-    height: 66%;
+  height: 66%; /* 66px */
+  background-color: #fdcb6e;
 }
 
 .prcnt-100 {
-    height: 100%;
+  height: 100%; /* 100px */
+  background-color: #d63031;
 }
 
-/* viewport height */
+/* 
+📱 vh (viewport height)
+Relativo à altura da janela do navegador.
+1vh = 1% da altura da viewport.
+*/
 .vh {
-    height: 30vh;
+  height: 30vh; /* 30% da altura da tela */
+  background-color: #e17055;
 }
 
-/* viewport width */
+/* 
+💻 vw (viewport width)
+Relativo à largura da janela do navegador.
+1vw = 1% da largura da viewport.
+*/
 .vw {
-    width: 50vw;
+  width: 50vw; /* 50% da largura da tela */
+  background-color: #f64348;
 }
