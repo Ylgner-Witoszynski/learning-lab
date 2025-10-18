@@ -1,0 +1,44 @@
+/* Seletor :nth-child()  --- permite pegar um elemento especifico*/
+li:nth-child(2) {
+    color: red;
+}
+
+/* 2n seria multiplicado -- odd(impar) -- even(par)*/
+li:nth-child(2n) {
+    color: blue
+}
+
+/*hover marca o item que estou passando o mouse*/
+li:hover {
+    background-color: grey;
+}
+
+/*quando clicar no item ele destaca*/
+/*input:focus {
+
+}*/
+
+/* pseudo-elementos ::after e ::before -- elemento que vai ser criado so na pagina sem existir no codigo*/
+li::before {
+    content: "(antes)";
+}
+
+li::after {
+    content: "(depois)";
+}
+
+/* */s
+li:first-child {
+    color: rgb(255, 174, 0);
+}
+
+li:last-child {
+    color: rgb(255, 0, 179);
+}
+
+/* todos que não forem aquele determinado serao alterados*/
+li:not(:first-child) {
+    color: aqua;
+}
+
+
