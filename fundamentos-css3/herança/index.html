@@ -1,30 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Aula de Herança no CSS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Importando o arquivo CSS externo -->
+  <link rel="stylesheet" href="style.css">
+
+  <title>Aula de Herança no CSS</title>
 </head>
 
 <body>
-    <header>
-        <h1>Herança no CSS</h1>
-    </header>
+  <!-- 
+    💡 TÍTULO PRINCIPAL
+    A herança no CSS define que algumas propriedades são automaticamente 
+    passadas dos elementos "pais" para os "filhos".
+  -->
+  <header>
+    <h1>Herança no CSS</h1>
+  </header>
 
+  <main>
+    <!-- 
+      📘 EXEMPLO PRÁTICO DE HERANÇA
+      - O objetivo é visualizar como estilos aplicados a um elemento pai
+        afetam os elementos filhos.
+      - Aqui, temos uma estrutura com "div pai" e "div filha".
+    -->
     <section>
-        <h2>Exemplos de Herança</h2>
-        <p>Veja como a herança afeta diferentes propriedades de estilo.</p>
-        <div class="parent">
-            <p>Texto com estilo herdado</p>
-            <span>Span dentro da div</span>
-            <div class="child">
-                <p>Texto com estilo específico</p>
-                <span>Span dentro da div</span>
-            </div>
-        </div>
-    </section>
-</body>
+      <h2>Exemplos de Herança</h2>
+      <p>Veja como a herança afeta diferentes propriedades de estilo.</p>
 
+      <!-- Elemento pai -->
+      <div class="parent">
+        <p>Texto com estilo herdado</p>
+        <span>Span dentro da div</span>
+
+        <!-- Elemento filho (com estilos próprios que podem sobrescrever os do pai) -->
+        <div class="child">
+          <p>Texto com estilo específico</p>
+          <span>Span dentro da div</span>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
 </html>
