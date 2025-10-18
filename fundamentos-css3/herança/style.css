@@ -1,24 +1,59 @@
+/*
+=====================================
+🎓 Aula: Herança no CSS
+-------------------------------------
+Este arquivo demonstra como estilos
+são herdados (ou sobrescritos) entre
+elementos pais e filhos no HTML.
+=====================================
+*/
+
+/* 
+🧱 Estilo global da página
+Define a fonte base usada em todo o documento.
+Propriedades como 'font-family' são herdadas por padrão.
+*/
 body {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+/* 
+🎨 Cabeçalho
+Propriedades como 'color' e 'text-align' 
+também são herdadas pelos elementos filhos (ex: <h1>).
+*/
 header {
-    background-color: #232323;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
+  background-color: #232323; /* cor de fundo escura */
+  color: #fff;               /* texto branco */
+  text-align: center;        /* centraliza o texto */
+  padding: 1rem;             /* espaçamento interno */
 }
 
+/* 
+📝 Título principal
+Este <h1> tem uma fonte diferente da herdada do <body>.
+Isso mostra como sobrescrever uma propriedade herdada.
+*/
 h1 {
-    font-family: serif;
+  font-family: serif; /* fonte diferente da usada no body */
 }
 
+/* 
+👪 Elemento PAI
+Todas as propriedades herdáveis (como color e font-size)
+serão passadas aos elementos filhos, a menos que sejam substituídas.
+*/
 .parent {
-    font-size: 1.25rem;
-    color: #f64348;
+  font-size: 1.25rem; /* aumenta o tamanho do texto */
+  color: #f64348;     /* cor vermelha (herdada pelos filhos) */
 }
 
+/* 
+🧒 Elemento FILHO
+Sobrescreve a herança do pai com novos valores.
+Mesmo que o pai defina cor e tamanho, este bloco redefine ambos.
+*/
 .child {
-    font-size: 2rem;
-    color: #00ff9f;
+  font-size: 2rem;   /* sobrescreve o tamanho herdado */
+  color: #00ff9f;    /* sobrescreve a cor herdada */
 }
