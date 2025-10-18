@@ -1,4 +1,5 @@
-p{
-    color: white;
-    font-size: x-large;
+/* 🎨 Seleciona todos os elementos <p> (parágrafos) da página */
+p {
+    color: white;        /* Define a cor do texto como branca */
+    font-size: x-large;  /* Aumenta o tamanho da fonte para "extra grande" */
 }
