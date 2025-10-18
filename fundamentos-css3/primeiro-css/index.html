@@ -6,18 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seu Primeiro Código CSS</title>
 
+    <!-- 🎨 CSS Interno (ou embutido)
+         Define regras de estilo dentro da tag <style>.
+         Ideal para testes rápidos ou pequenos projetos.
+    -->
     <style>
         h1 {
-            color: white;
+            color: white; /* Altera a cor do texto do título para branco */
+            text-align: center; /* Centraliza o texto na tela */
+        }
+
+        p {
+            color: #ccc; /* Define a cor do texto do parágrafo */
+            font-size: 18px; /* Aumenta o tamanho da fonte */
+            line-height: 1.5; /* Melhora o espaçamento entre linhas */
+            margin: 20px; /* Adiciona margem em volta do parágrafo */
         }
     </style>
 
+    <!-- 🎨 CSS Externo
+         O arquivo "style.css" pode conter estilos adicionais.
+         Essa é a forma mais usada em projetos reais, pois separa o conteúdo do estilo.
+    -->
     <link rel="stylesheet" href="style.css">
 </head>
 
+<!-- 🎨 CSS Inline
+     Aplicado diretamente no elemento HTML, usando o atributo "style".
+     Deve ser usado apenas em casos específicos.
+-->
 <body style="background-color: black;">
     <h1>Seu Primeiro Código CSS</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eaque quod aut iusto, nesciunt tempora eligendi. Nobis, pariatur nulla obcaecati fugiat voluptatibus, nihil incidunt natus quam aperiam, aliquid officiis dolore.</p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Magnam eaque quod aut iusto, nesciunt tempora eligendi.
+        Nobis, pariatur nulla obcaecati fugiat voluptatibus, nihil
+        incidunt natus quam aperiam, aliquid officiis dolore.
+    </p>
 </body>
 
 </html>
