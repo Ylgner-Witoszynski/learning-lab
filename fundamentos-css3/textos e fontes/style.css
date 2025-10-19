@@ -1,31 +1,42 @@
+/* ======= ESTILIZAÇÃO GERAL ======= */
+
+/* Centraliza o texto do cabeçalho, adiciona linha acima e deixa o texto em maiúsculas */
 header {
-    text-align: center;
-    text-decoration: overline;
-    text-transform: uppercase;
-  }
-  
-  h1 {
-    font-family: cursive;
-    font-weight: 100;
-  }
-  
-  h2 {
-    font-size: 16px;
-    letter-spacing: 10px;
-    text-transform: uppercase;
-  }
-  
-  p {
-      font-family: sans-serif;
-  }
-  
-  .bold {
-    font-weight: 700;
-  }
-  
-  .italic {
-    font-style: italic;
-  }
-  
-  
-  
+  text-align: center;
+  text-decoration: overline; /* Cria uma linha acima do texto */
+  text-transform: uppercase; /* Transforma todas as letras em maiúsculas */
+}
+
+/* ======= TÍTULOS ======= */
+
+/* Estilo do título principal (h1) */
+h1 {
+  font-family: cursive; /* Usa uma fonte cursiva (como escrita à mão) */
+  font-weight: 100; /* Peso da fonte mais fino */
+}
+
+/* Estilo do subtítulo (h2) */
+h2 {
+  font-size: 16px; /* Define o tamanho da fonte */
+  letter-spacing: 10px; /* Espaçamento entre as letras */
+  text-transform: uppercase; /* Deixa o texto em letras maiúsculas */
+}
+
+/* ======= PARÁGRAFOS ======= */
+
+/* Define uma fonte simples e limpa para os parágrafos */
+p {
+  font-family: sans-serif; /* Fonte sem serifa, mais moderna e legível */
+}
+
+/* ======= CLASSES PERSONALIZADAS ======= */
+
+/* Aplica negrito ao texto */
+.bold {
+  font-weight: 700; /* Peso forte da fonte */
+}
+
+/* Aplica itálico ao texto */
+.italic {
+  font-style: italic; /* Inclina o texto */
+}
