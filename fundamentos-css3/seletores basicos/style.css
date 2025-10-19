@@ -1,67 +1,144 @@
-/* seletor universal */
+/* 
+==============================
+  🌐 SELETORES BÁSICOS DE CSS
+==============================
+
+Este arquivo demonstra diferentes tipos de seletores no CSS.
+Cada tipo de seletor permite atingir elementos HTML de maneiras específicas.
+*/
+
+/* 
+---------------------------
+🔸 Seletor Universal (*)
+Aplica as regras a todos os elementos da página.
+Usado aqui para remover margens e espaçamentos padrões.
+---------------------------
+*/
 * {
     margin: 0;
     padding: 0;
 }
 
-/* seletor de tag */
+/* 
+---------------------------
+🔸 Seletor de TAG
+Afeta todas as tags <header> e <footer>.
+Usado para definir cores e espaçamento.
+---------------------------
+*/
 header, footer {
     background-color: #333;
     color: #fff;
     padding: 10px;
 }
 
-/* seletor de elementos aninhados */
+/* 
+---------------------------
+🔸 Seletor de Elementos Aninhados
+Afeta os links <a> que estão dentro da tag <nav>.
+---------------------------
+*/
 nav a {
     color: #27ae60;
 }
 
-/* seletor de filhos */
+/* 
+---------------------------
+🔸 Seletor de Filhos Diretos (>)
+Afeta apenas os links <a> que são filhos diretos de <nav>.
+Esses não estão dentro de <ul> ou <li>.
+---------------------------
+*/
 nav > a {
     display: block;
     color: #f5a623;
     padding: 10px;
 }
 
-/* seletor de classes */
+/* 
+---------------------------
+🔸 Seletor de Classe (.)
+Afeta apenas os elementos que possuem a classe definida no HTML.
+Exemplo: <p class="laranja"> ou <p class="verde">
+---------------------------
+*/
 .laranja {
     color: #f5a623;
 }
+
 .verde {
     color: #27ae60;
 }
 
-/* seletor de id */
+/* 
+---------------------------
+🔸 Seletor de ID (#)
+Aplica estilos somente ao elemento com ID específico.
+Exemplo: <section id="secao-principal">
+---------------------------
+*/
 #secao-principal {
     padding: 20px;
     text-align: center;
 }
 
-/* combinação de seletores */
+/* 
+---------------------------
+🔸 Combinação de Seletores
+Neste caso, todos os filhos diretos (*) de #secao-principal recebem margem superior.
+---------------------------
+*/
 #secao-principal > * {
     margin-top: 10px;
 }
 
+/* 
+---------------------------
+🔸 Seletor de Tag
+Afeta todos os elementos <input>.
+---------------------------
+*/
 input {
     display: block;
     padding: 5px;
     margin: 5px;
 }
 
-/* seletor de sequência */
+/* 
+---------------------------
+🔸 Seletor de Sequência (+)
+Seleciona o elemento que vem imediatamente após outro.
+Aqui, o segundo <input> após o primeiro ganha margens extras.
+---------------------------
+*/
 input + input {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+/* 
+---------------------------
+🔸 Seletor de Sequência entre Títulos e Parágrafos
+Aplica padding extra apenas nos parágrafos que vêm logo após um <h2>.
+---------------------------
+*/
 h2 + p {
     padding: 30px;
 }
 
-/* seletores de propriedade */
+/* 
+---------------------------
+🔸 Seletor de Atributo [atributo="valor"]
+Permite atingir elementos baseados em atributos HTML.
+---------------------------
+*/
+
+/* Estiliza o input cujo atributo "name" é igual a "email" */
 input[name="email"] {
     background-color: #f5a623;
 }
 
+/* Estiliza o input cujo tipo (type) é "password" */
 input[type="password"] {
     background-color: #27ae60;
 }
