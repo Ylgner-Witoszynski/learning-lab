@@ -1,44 +1,89 @@
-/* Seletor :nth-child()  --- permite pegar um elemento especifico*/
+/* ============================================================
+   🎯 EXERCÍCIO: SELETORES AVANÇADOS NO CSS
+   Autor: Ylgner Witoszynski Santana
+   Descrição: Este arquivo demonstra o uso de pseudo-classes e 
+   pseudo-elementos em listas HTML (<li>).
+   ============================================================ */
+
+
+/* 
+  🔹 :nth-child()
+  Seleciona o N-ésimo elemento dentro de um mesmo tipo.
+  Neste exemplo, o 2º item da lista será vermelho.
+*/
 li:nth-child(2) {
     color: red;
 }
 
-/* 2n seria multiplicado -- odd(impar) -- even(par)*/
+/* 
+  🔹 :nth-child(2n)
+  Seleciona todos os elementos em posições múltiplas de 2.
+  Pode-se usar também:
+    - odd  → seleciona os itens ímpares
+    - even → seleciona os itens pares
+*/
 li:nth-child(2n) {
-    color: blue
+    color: blue;
 }
 
-/*hover marca o item que estou passando o mouse*/
+/* 
+  🔹 :hover
+  Aplica o estilo quando o usuário passa o mouse sobre o elemento.
+*/
 li:hover {
     background-color: grey;
+    cursor: pointer; /* Indica que o item é interativo */
 }
 
-/*quando clicar no item ele destaca*/
-/*input:focus {
+/* 
+  🔹 :focus
+  Ativa o estilo quando um elemento de formulário (como input) 
+  é selecionado. (Comentado pois não há inputs neste exemplo)
+*/
+/*
+input:focus {
+    outline: 2px solid red;
+}
+*/
 
-}*/
-
-/* pseudo-elementos ::after e ::before -- elemento que vai ser criado so na pagina sem existir no codigo*/
+/* 
+  🔹 ::before e ::after
+  Criam conteúdos virtuais antes e depois do elemento,
+  sem precisar adicionar nada no HTML.
+*/
 li::before {
-    content: "(antes)";
+    content: "(antes) ";
+    color: #888;
 }
 
 li::after {
-    content: "(depois)";
+    content: " (depois)";
+    color: #888;
 }
 
-/* */s
+/* 
+  🔹 :first-child
+  Seleciona o primeiro item da lista.
+*/
 li:first-child {
     color: rgb(255, 174, 0);
+    font-weight: bold;
 }
 
+/* 
+  🔹 :last-child
+  Seleciona o último item da lista.
+*/
 li:last-child {
     color: rgb(255, 0, 179);
+    font-style: italic;
 }
 
-/* todos que não forem aquele determinado serao alterados*/
+/* 
+  🔹 :not()
+  Seleciona todos os elementos que NÃO atendem a uma condição.
+  Aqui, todos os itens que não são o primeiro ficam azul-piscina.
+*/
 li:not(:first-child) {
     color: aqua;
 }
-
-
