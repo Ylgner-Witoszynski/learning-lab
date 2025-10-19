@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
     <title>Seletores Básicos do CSS</title>
+
+    <!-- Importando o arquivo CSS externo -->
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+    <!-- Cabeçalho da página -->
     <header>
         <h1>Seletores Básicos do CSS</h1>
     </header>
 
+    <!-- Menu de navegação -->
     <nav>
+        <!-- Link da logo -->
         <a href="#">LOGO</a>
+
+        <!-- Lista de links do menu -->
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Sobre</a></li>
@@ -22,25 +28,37 @@
         </ul>
     </nav>
 
+    <!-- Seção principal -->
     <section id="secao-principal">
         <h2>Exemplos de Seletores</h2>
+
+        <!-- Parágrafo sem classe, afetado apenas por seletores de tipo (p) -->
         <p>Este parágrafo não está utilizando um seletor de classe.</p>
+
+        <!-- Parágrafos com classes diferentes -->
         <p class="laranja">
-            Este parágrafo está utilizando um seletor de classe.
+            Este parágrafo está utilizando um seletor de classe (.laranja).
         </p>
-        <p class="verde">Este parágrafo está utilizando um seletor de classe.</p>
+
+        <p class="verde">
+            Este parágrafo está utilizando um seletor de classe (.verde).
+        </p>
     </section>
 
+    <!-- Formulário de exemplo -->
     <section>
         <form>
-            <input type="text" name="email" />
-            <input type="password" name="password" />
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" />
+
+            <label for="password">Senha:</label>
+            <input type="password" name="password" id="password" />
         </form>
     </section>
 
+    <!-- Rodapé -->
     <footer>
-        <p>OneBitCode © 2023</p>
+        <p>Desenvolvido por Ylgner Witoszynski Santana © 2025</p>
     </footer>
 </body>
-
 </html>
