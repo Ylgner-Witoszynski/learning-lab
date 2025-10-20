@@ -3,6 +3,7 @@
 Bem-vindo(a)!  
 Este repositório foi criado por **Ylgner Witoszynski Santana** para documentar minha jornada de aprendizado em **desenvolvimento web e tecnologia**.  
 Aqui você encontrará **códigos comentados**, **anotações**, **mini projetos** e exemplos práticos que podem ajudar outras pessoas que também estão começando na área.
+Criado de acordo com o estudo do curso FullStack do **OneBitCode**.
 
 ---
 
