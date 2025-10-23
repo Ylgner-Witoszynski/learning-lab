@@ -1,23 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Incluindo Javascript em uma Página HTML</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Incluindo JavaScript em uma Página HTML</title>
 
-  <script src="./index.js"></script>
+  <!-- Forma 1: Importando um arquivo JavaScript externo -->
+  <!-- Essa é a forma mais recomendada para projetos reais -->
+  <script src="./index.js" defer></script>
+
+  <!-- O atributo "defer" faz o script ser carregado após o HTML ser interpretado -->
 </head>
-<body>
-  <h1>Incluindo Javascript em uma Página HTML</h1>
-</body>
-</html>
 
-<!--colocando código direto no html
-<script>
-   let name = "Ylgner"
-   let x = 5
-   
-   console.log(name)
-   console.log(x)
-</script>-->
+<body>
+  <h1>Incluindo JavaScript em uma Página HTML</h1>
+
+  </body>
+</html>
