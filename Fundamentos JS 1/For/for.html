@@ -1,16 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>For</title>
+  <title>Estrutura de Repetição: For</title>
 
-  <script src="./for.js"></script>
+  <!-- 
+    Aqui fazemos a conexão do arquivo JavaScript externo.
+    Tudo que estiver dentro de "for.js" será executado quando a página carregar.
+  -->
+  <script src="./for.js" defer></script>
+
+  <!-- 
+    A palavra "defer" faz o navegador carregar o JS 
+    apenas depois que o HTML for totalmente processado.
+    Isso evita erros e é uma boa prática.
+  -->
 </head>
+
 <body>
-  <h1>For</h1>
-  <script src="./for.js"></script>
+  <!-- Título principal da página -->
+  <h1>Estrutura de Repetição: For</h1>
+
+  <!-- 
+    O script também poderia ser inserido aqui, mas como usamos "defer" no head, 
+    não precisamos repetir o <script> dentro do body.
+  -->
 </body>
 </html>
-
