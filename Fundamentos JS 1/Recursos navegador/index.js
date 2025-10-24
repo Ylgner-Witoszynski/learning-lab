@@ -1,19 +1,47 @@
-let nome = "Ylgner"
+// ============================================================================
+// 💻 RECURSOS NATIVOS DO NAVEGADOR
+// ============================================================================
+// O JavaScript oferece várias funções prontas (nativas) para interagir com o
+// navegador e com o usuário, como alertas, prompts e confirmações.
+// ============================================================================
 
-console.log(nome) //para exibir no console do navegador
-console.error(nome) // para exibir como mensagem de erro
-console.warn(nome) // para exibir como aviso
+// ---------------------------------------------------------------------------
+// 🧾 Exemplo de variáveis e mensagens no console
+// ---------------------------------------------------------------------------
+let nome = "Ylgner" // variável armazenando um nome
 
-window.alert(nome) //exibe uma caixa como alerta no navegador
-nome = window.prompt("Insira o seu nome") 
-//serve para usuario digitar
-//da para atribuir em uma variavel
+// Exibe informações no console do navegador:
+console.log(nome)   // Mostra o valor da variável no console (mensagem normal)
+console.error(nome) // Mostra o valor como um erro (vermelho)
+console.warn(nome)  // Mostra o valor como um aviso (amarelo)
 
-let confirmacao = window.confirm("confirma esta ação?")
-//serve para usuario confirmar algo no sim ou nao
-//da para atribuir em uma variavel
+// ---------------------------------------------------------------------------
+// ⚠️ Exemplo de mensagens na tela (interação com o usuário)
+// ---------------------------------------------------------------------------
 
-//window é o objeto global no navegador, ou seja, não preciso botar o window. antes
-// posso abreviar, exemplo: alert("olá, mundo"), prompt("olá")
+// Mostra uma caixa de alerta no navegador com uma mensagem simples
+window.alert(nome)
 
-document //faz referencia para a página html
+// Exibe uma caixa de entrada de texto para o usuário digitar algo
+// O valor digitado é armazenado na variável 'nome'
+nome = window.prompt("Insira o seu nome:")
+
+// Mostra uma caixa de confirmação (OK ou Cancelar)
+// O resultado (true/false) é armazenado na variável 'confirmacao'
+let confirmacao = window.confirm("Confirma esta ação?")
+
+// ---------------------------------------------------------------------------
+// 💡 Observação importante:
+// ---------------------------------------------------------------------------
+// O objeto "window" é o objeto global do navegador. 
+// Isso significa que podemos omitir "window." antes das funções.
+// Os dois exemplos abaixo fazem a MESMA coisa:
+alert("Olá, mundo!")     // forma simplificada
+window.alert("Olá, mundo!") // forma completa
+
+// ---------------------------------------------------------------------------
+// 🧩 O objeto "document"
+// ---------------------------------------------------------------------------
+// Faz referência à página HTML atual (o DOM - Document Object Model)
+// Podemos usar o "document" para acessar e modificar elementos HTML via JS.
+console.log(document) // mostra toda a estrutura HTML no console
