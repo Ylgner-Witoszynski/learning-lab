@@ -1,37 +1,57 @@
-const resultado = prompt("Escolha uma alternativa:\na) \nb) \nc) ")
+/*
+🧩 Estrutura Condicional: switch
 
-switch ("b") {
-    case "a":
-        alert("O resultado é 'a'")
-        break
-    case "b":
-        alert("O resultado é 'b'")
-        break
-    case "c":
-        alert("O resultado é 'c'")
-        break
-    default:
-        alert("Finalizando...")
-        break;
+O switch é usado quando queremos comparar uma variável com várias opções possíveis (casos),
+sem precisar escrever vários "if" e "else if".
+*/
+
+// Exibe uma caixa para o usuário digitar uma opção
+const resultado = prompt(
+  "Escolha uma alternativa:\n a) Opção A\n b) Opção B\n c) Opção C"
+)
+
+// O valor digitado pelo usuário é comparado abaixo
+// 👇 Importante: o valor do "switch" deve ser a variável "resultado"
+switch (resultado) {
+  case "a":
+    alert("Você escolheu a alternativa 'a'.")
+    break // ⛔ Impede que o código continue executando os outros casos
+
+  case "b":
+    alert("Você escolheu a alternativa 'b'.")
+    break
+
+  case "c":
+    alert("Você escolheu a alternativa 'c'.")
+    break
+
+  default:
+    // ⚠️ Executado quando nenhuma das opções acima for escolhida
+    alert("Alternativa inválida! Tente novamente.")
+    break
 }
 
 /*
-const resultado = prompt("Escolha uma alternativa:\na) \nb) \nc) ")
+📘 Variação numérica (exemplo didático):
 
-const resultadoNumerico = parseFloat(resultado)
+Se quisermos que o usuário digite um número ao invés de uma letra,
+podemos converter o valor usando parseInt() ou parseFloat().
 
-switch (resultadoNumerico) {
-    case "1":
-        alert("O resultado é 'a'")
-        break
-    case "2":
-        alert("O resultado é 'b'")
-        break
-    case "3":
-        ("O resultado é 'c'")
-        break
-    default:
-        alert("Finalizando...")
-        break;
+Exemplo:
+
+const escolha = parseInt(prompt("Escolha uma opção:\n1) Opção A\n2) Opção B\n3) Opção C"))
+
+switch (escolha) {
+  case 1:
+    alert("Você escolheu a opção 1 - A.")
+    break
+  case 2:
+    alert("Você escolheu a opção 2 - B.")
+    break
+  case 3:
+    alert("Você escolheu a opção 3 - C.")
+    break
+  default:
+    alert("Opção inválida.")
 }
 */
