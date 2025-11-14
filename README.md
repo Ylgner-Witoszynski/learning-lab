@@ -63,7 +63,7 @@ Criar seus próprios exercícios a partir das ideias aqui.
 
 ---
 
-###🤝 Contribua
+### 🤝 Contribua
 
 Quer colaborar com melhorias ou novos exemplos?
 Sinta-se à vontade para:
@@ -76,7 +76,7 @@ Compartilhar ideias didáticas.
 
 ---
 
-###🧑‍💻 Autor
+### 🧑‍💻 Autor
 Ylgner Witoszynski Santana
 
 📘 Estudante de Ciência da Computação (UNINOVE)
