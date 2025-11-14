@@ -91,9 +91,11 @@ LinkedIn: https://www.linkedin.com/in/ylgner-witoszynski-santana-613a631a1/
 
 GitHub: https://github.com/Ylgner-Witoszynski
 
-🏁 Status
+---
 
-📅 Última atualização: Outubro de 2025
+### 🏁 Status
+
+📅 Última atualização: Novembro de 2025
 
 📚 Em constante evolução — novos conteúdos serão adicionados conforme meus estudos avançam.
 
