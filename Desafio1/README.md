@@ -1,44 +1,36 @@
-# 📚 Minha Jornada de Estudos - Front-end
+# Desafio de Projeto - Estrutura Básica HTML
 
-Bem-vindo(a) ao repositório oficial da minha jornada de aprendizado em desenvolvimento Front-end! 🚀
-
-Aqui concentrarei todos os projetos, desafios de código, anotações e exercícios desenvolvidos ao longo dos meus estudos (incluindo o Bootcamp da DIO), servindo como um portfólio da minha evolução técnica.
+Este repositório contém a resolução do Desafio de Projeto focado na criação de uma estrutura básica de website utilizando HTML.
 
 ## 🎯 Objetivo
 
-O objetivo principal é documentar o progresso, fixar o conhecimento através da prática e compartilhar soluções para desafios comuns de desenvolvimento web.
+O objetivo deste projeto é colocar em prática o conhecimento adquirido sobre a estrutura do HTML, utilizando tags ensinadas em aula e incorporando novas tags pesquisadas para enriquecer o conteúdo semântico e visual da página.
 
-## 🗂️ Estrutura do Repositório
+## 🛠️ Tecnologias Utilizadas
 
-O repositório está organizado em pastas, onde cada uma representa um módulo ou um projeto específico:
+- **HTML5**
 
-- **[Desafio1](./Desafio1)**: Projeto focado na estrutura básica do HTML5, utilizando tags semânticas, de formatação e listas.
-- _(Novos projetos serão adicionados aqui conforme o avanço nos estudos)_
+## 🏷️ Tags Demonstradas
 
-## 🛠️ Tecnologias e Ferramentas
+O arquivo `index.html` apresenta exemplos práticos das seguintes tags:
 
-Tecnologias que estou estudando e praticando neste repositório:
+- **Títulos e Texto:** `<h1>` até `<h6>`, `<p>`, `<blockquote>`
+- **Formatação:** `<strong>`, `<i>`, `<u>`, `<small>`, `<mark>`
+- **Fórmulas e Citações:** `<sub>`, `<sup>`
+- **Listas:** `<ol>`, `<ul>`, `<li>`
+- **Links e Divisores:** `<a>`, `<hr>`
+- **Tags Extras (Pesquisa):**
+  - `<abbr>`: Para definir abreviações.
+  - `<del>`: Para indicar texto removido.
+  - `<font>`: Para estilização de fonte (tag legada utilizada para fins didáticos).
 
-- **HTML5**: Estrutura, Semântica e Acessibilidade.
-- **CSS3**: Estilização, Flexbox, Grid e Responsividade.
-- **JavaScript**: Lógica de programação e manipulação do DOM.
-- **Git & GitHub**: Controle de versão e fluxo de trabalho.
-- **VS Code**: Editor de código.
+## 🚀 Como Executar
 
-## 📈 Log de Progresso
-
-| Projeto / Módulo     |     Status      | Descrição Breve                                   |
-| :------------------- | :-------------: | :------------------------------------------------ |
-| **Desafio 1 - HTML** |  ✅ Concluído   | Criação de website utilizando diversas tags HTML. |
-| **CSS Básico**       | 🔄 Em andamento | Estudos sobre seletores e cores.                  |
-| **JavaScript**       |   ⏳ Pendente   | Introdução à lógica.                              |
-
-## 🤝 Contato
-
-Sinta-se à vontade para explorar os códigos, deixar sugestões ou entrar em contato para trocarmos conhecimentos sobre tecnologia!
+1. Faça o download do arquivo `index.html` ou clone este repositório.
+2. Navegue até a pasta onde o arquivo foi salvo.
+3. Abra o arquivo `index.html` em qualquer navegador web (Chrome, Firefox, Edge, etc.).
 
 ---
 
-<div align="center">
-  <sub>Desenvolvido com 💙 por [Seu Nome]</sub>
-</div>
+Desenvolvido como parte dos estudos de Front-end.
+
