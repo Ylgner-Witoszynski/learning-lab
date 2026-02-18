@@ -1,0 +1,33 @@
+<!--Criando Novos Elementos no DOM
+
+O DOM nos permite adicionar dinamicamente novos elementos HTML ao documento
+
+para isso precisamos: 
+1.Criar elemento
+document.createElement()
+2.Adicionar conteúdo ao elemento
+newElement.innerHTML = "Olá, mundo!"
+3.Adicionar o elemento como um novo nó no DOM
+element.appendChild(newElement)
+
+Também é possível clonar algum elementos existente do DOM-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criando Novos Elementos no DOM</title>
+  <script src="./dom.js"></script>
+</head>
+
+<body>
+  <h1>Criando Novos Elementos no DOM</h1>
+
+  <button onclick="addInput()">Adicionar Input</button>
+
+  <ul id="inputs"></ul>
+</body>
+
+</html>
