@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+header {
+    margin: 2rem;
+    padding-bottom: 2rem ;
+    font-size: 32px;
+    border-bottom: 1px solid #888;
+}
+
+section, p {
+    font-size: 32px;
+    margin: 10px;
+    padding: 10px;
+}
+
+button{
+    background-color: black;
+    color: white;
+    border-radius: 40px;
+    border: solid 4px transparent;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+    height: 70px;
+    width: 250px;
+    font-size: 20px;
+}
+
+.corpo {
+    margin-top: 2em;
+    padding: 2px;
+    
+}
+
+li{
+    background-color: #1f97c6;
+    border: solid 4px transparent;
+    color: #ffffff;
+    cursor: pointer;
+    position: relative;
+    border-radius: 40px;
+    display: inline-block;
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px;
+    height: 5x;
+    width: 200px;
+    font-size: 10px;
+}
+
+.ficcao {
+    width: 300px;
+}
+
+.mais {
+    background-color: black;
+}
+
+.final {
+    margin-top: 2em;
+}
+
+footer {
+    background-color: black;
+    border: solid 4px transparent;
+    color: white;
+    font-size: 2px;
+}
+
+/*
+* {
+    font-family: "Fira Sans", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    border-bottom: 1px solid #030308;
+    font-size: 1.125rem;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: "Lora", serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.feature, .catalog, .cta {
+    font-size: 1.125rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.cta-button {
+    background-color: #030308;
+    border-radius: 9999px;
+    color: #fff;
+    display: block;
+    margin: 2rem auto;
+    padding: 1rem 1.5rem;
+    width: fit-content;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.genres > li {
+    display: inline-block;
+    margin-top: 2rem;
+}
+
+.genres > li + li {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.genre > a,
+.see-more > a {
+    background-color: #43abf6;
+    border-radius: 9999px;
+    color: #fff;
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+}
+
+.see-more > a {
+    background-color: #030308;
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: #030308;
+    color: #fff;
+    font-family: "Lora", serif;
+    padding: 2rem;
+    text-align: center;
+}
+*/
