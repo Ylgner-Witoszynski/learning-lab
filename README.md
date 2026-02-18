@@ -3,7 +3,6 @@
 Bem-vindo(a)!  
 Este repositório foi criado por **Ylgner Witoszynski Santana** para documentar minha jornada de aprendizado em **desenvolvimento web e tecnologia**.  
 Aqui você encontrará **códigos comentados**, **anotações**, **mini projetos** e exemplos práticos que podem ajudar outras pessoas que também estão começando na área.  
-Criado de acordo com o estudo do curso FullStack do **OneBitCode**.
 
 ---
 
@@ -79,7 +78,7 @@ Compartilhar ideias didáticas.
 ### 🧑‍💻 Autor
 Ylgner Witoszynski Santana
 
-📘 Estudante de Ciência da Computação (UNINOVE)
+📘 Graduado em Ciência da Computação (UNINOVE)
 
 🚀 Em transição de carreira para a área de tecnologia
 
@@ -95,7 +94,7 @@ GitHub: https://github.com/Ylgner-Witoszynski
 
 ### 🏁 Status
 
-📅 Última atualização: Novembro de 2025
+📅 Última atualização: Fevereiro de 2026
 
 📚 Em constante evolução — novos conteúdos serão adicionados conforme meus estudos avançam.
 
