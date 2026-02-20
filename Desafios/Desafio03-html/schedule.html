@@ -1,0 +1,109 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Página de horários com tabela semântica e elementos de estrutura HTML." />
+    <title>Desafio HTML | Horários</title>
+    <style>
+      body { font-family: Arial, sans-serif; line-height: 1.5; margin: 1rem; }
+      table, th, td { border: 1px solid #999; border-collapse: collapse; padding: 0.4rem; }
+      .skip-link { position: absolute; left: -9999px; }
+      .skip-link:focus { left: 1rem; top: 1rem; background: #fff; }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+    <header>
+      <h1>Horários das Aulas</h1>
+      <nav aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="schedule.html" aria-current="page">Horários</a></li>
+        </ul>
+      </nav>
+      <p>
+        Semana de referência:
+        <time datetime="2026-W08">Semana 08 de 2026</time>
+      </p>
+    </header>
+
+    <main id="conteudo">
+      <section aria-labelledby="titulo-grade">
+        <h2 id="titulo-grade">Grade semanal</h2>
+        <table>
+          <caption>Programação oficial das atividades</caption>
+          <colgroup>
+            <col span="1" />
+            <col span="1" />
+            <col span="1" />
+            <col span="1" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th scope="col">Dia</th>
+              <th scope="col">Horário</th>
+              <th scope="col">Tema</th>
+              <th scope="col">Modalidade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Segunda</th>
+              <td><time datetime="08:00">08:00</time> - <time datetime="10:00">10:00</time></td>
+              <td>Estrutura Base</td>
+              <td>Presencial</td>
+            </tr>
+            <tr>
+              <th scope="row">Quarta</th>
+              <td><time datetime="14:00">14:00</time> - <time datetime="16:00">16:00</time></td>
+              <td>Acessibilidade</td>
+              <td>Online</td>
+            </tr>
+            <tr>
+              <th scope="row">Sexta</th>
+              <td><time datetime="19:00">19:00</time> - <time datetime="21:00">21:00</time></td>
+              <td>Projeto Final</td>
+              <td>Híbrido</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="4">Atualização: <time datetime="2026-02-20">20/02/2026</time></td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <article aria-labelledby="titulo-regras">
+        <h2 id="titulo-regras">Regras e notas</h2>
+        <p>
+          Leve documento de identificação e acompanhe os avisos no mural.
+          Se houver mudança, você verá um aviso em <mark>destaque</mark>.
+        </p>
+        <details>
+          <summary>Ver regras rápidas</summary>
+          <ul>
+            <li>Chegar com 10 minutos de antecedência.</li>
+            <li>Usar fone em aulas online.</li>
+            <li>Trazer dúvidas anotadas.</li>
+          </ul>
+        </details>
+      </article>
+
+      <aside aria-labelledby="titulo-status">
+        <h2 id="titulo-status">Status da turma</h2>
+        <p>Presença média: <meter min="0" max="100" value="88">88%</meter></p>
+        <p>Atividades concluídas: <progress value="7" max="10">70%</progress></p>
+      </aside>
+    </main>
+
+    <footer>
+      <p><small>Portal de Estudos HTML</small></p>
+      <address>
+        E-mail: <a href="mailto:contato@exemplo.com">contato@exemplo.com</a>
+      </address>
+    </footer>
+  </body>
+</html>

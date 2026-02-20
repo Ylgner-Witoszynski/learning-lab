@@ -1,0 +1,335 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Página inicial com foco em semântica, acessibilidade e uso variado de tags HTML."
+    />
+    <title>Desafio HTML | Início</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.5;
+        margin: 1rem;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid #999;
+        border-collapse: collapse;
+        padding: 0.4rem;
+      }
+      .skip-link {
+        position: absolute;
+        left: -9999px;
+      }
+      .skip-link:focus {
+        left: 1rem;
+        top: 1rem;
+        background: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+    <header>
+      <p>
+        <strong>Desafio 03</strong> <small>HTML Semântico e Acessível</small>
+      </p>
+      <h1>Portal de Estudos <span lang="en">HTML</span></h1>
+      <nav aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html" aria-current="page">Início</a></li>
+          <li><a href="schedule.html">Horários</a></li>
+          <li><a href="#formulario">Formulário</a></li>
+          <li><a href="#tabela">Tabela</a></li>
+        </ul>
+      </nav>
+      <hr />
+    </header>
+
+    <main id="conteudo">
+      <section aria-labelledby="titulo-intro">
+        <h2 id="titulo-intro">Introdução</h2>
+        <p>
+          Este projeto aplica <dfn id="def-semantica">semântica</dfn>,
+          <abbr title="Web Content Accessibility Guidelines">WCAG</abbr>,
+          <mark>boa estrutura</mark>, <em>clareza</em> e
+          <strong>acessibilidade</strong>.
+        </p>
+        <p>
+          Citação curta: <q cite="https://www.w3.org/">A Web é para todos.</q>
+        </p>
+        <blockquote
+          cite="https://www.w3.org/WAI/fundamentals/accessibility-intro/"
+        >
+          <p>
+            Acessibilidade digital melhora a experiência para todas as pessoas.
+          </p>
+          <cite>W3C WAI</cite>
+        </blockquote>
+
+        <figure>
+          <img
+            src="https://via.placeholder.com/700x260"
+            alt="Alunos estudando estrutura semântica em uma sala"
+            width="700"
+            height="260"
+          />
+          <figcaption>
+            Encontro de estudos em
+            <time datetime="2026-02-20">20/02/2026</time>.
+          </figcaption>
+        </figure>
+
+        <details>
+          <summary>Ver glossário rápido</summary>
+          <dl>
+            <dt>Semântica</dt>
+            <dd>Uso de tags com significado correto para o conteúdo.</dd>
+            <dt>Acessibilidade</dt>
+            <dd>Práticas que tornam o site utilizável por mais pessoas.</dd>
+          </dl>
+        </details>
+      </section>
+
+      <article aria-labelledby="titulo-artigo">
+        <header>
+          <h2 id="titulo-artigo">Exemplos de tags de texto</h2>
+          <p>
+            Atualizado em
+            <time datetime="2026-02-20">20 de fevereiro de 2026</time>.
+          </p>
+        </header>
+
+        <section>
+          <h3>Formatação e conteúdo técnico</h3>
+          <p>
+            <b>Negrito visual</b>, <i>itálico visual</i>,
+            <u>texto sublinhado</u>, <s>item antigo</s>,
+            <ins datetime="2026-02-20">item adicionado</ins>,
+            <del datetime="2026-02-19">item removido</del>.
+          </p>
+          <p>Exemplo: H<sub>2</sub>O e 2<sup>10</sup> = 1024.</p>
+          <p>
+            Pressione <kbd>Tab</kbd> para navegar; saída esperada:
+            <samp>Foco no próximo link</samp>.
+          </p>
+          <p>
+            Variável de exemplo: <var>nivelAcessibilidade</var> =
+            <data value="3">3</data>.
+          </p>
+          <p>
+            <ruby>HTML<rp>(</rp><rt>linguagem de marcação</rt><rp>)</rp></ruby>
+          </p>
+          <pre><code>&lt;section&gt;Conteúdo principal&lt;/section&gt;</code></pre>
+        </section>
+
+        <section>
+          <h3>Listas e medidores</h3>
+          <ol>
+            <li>Estruturar a página.</li>
+            <li>Aplicar acessibilidade.</li>
+            <li>Revisar leitura por teclado.</li>
+          </ol>
+          <ul>
+            <li>Tag <code>header</code></li>
+            <li>Tag <code>main</code></li>
+            <li>Tag <code>footer</code></li>
+          </ul>
+          <p>
+            Progresso do estudo: <progress value="8" max="10">80%</progress>
+          </p>
+          <p>
+            Nível atual: <meter min="0" max="100" value="82">82 de 100</meter>
+          </p>
+        </section>
+
+        <footer>
+          <p>
+            Leitura em outros idiomas: <bdi>usuario_علي</bdi> |
+            <bdo dir="rtl">texto em direção invertida</bdo>
+          </p>
+        </footer>
+      </article>
+
+      <aside aria-labelledby="titulo-aside">
+        <h2 id="titulo-aside">Links úteis</h2>
+        <p>Referências para estudo:</p>
+        <ul>
+          <li>
+            <a
+              href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"
+              rel="noopener"
+              target="_blank"
+              >MDN HTML</a
+            >
+          </li>
+          <li>
+            <a href="https://www.w3.org/WAI/" rel="noopener" target="_blank"
+              >W3C WAI</a
+            >
+          </li>
+        </ul>
+      </aside>
+
+      <section id="formulario" aria-labelledby="titulo-formulario">
+        <h2 id="titulo-formulario">Formulário de contato</h2>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Dados básicos</legend>
+            <p>
+              <label for="nome">Nome</label><br />
+              <input
+                id="nome"
+                name="nome"
+                type="text"
+                autocomplete="name"
+                required
+                list="lista-nomes"
+              />
+            </p>
+            <datalist id="lista-nomes">
+              <option value="Ana" />
+              <option value="Bruno" />
+              <option value="Carla" />
+            </datalist>
+            <p>
+              <label for="email">E-mail</label><br />
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+              />
+            </p>
+            <p>
+              <label for="perfil">Perfil</label><br />
+              <select id="perfil" name="perfil">
+                <optgroup label="Iniciante">
+                  <option value="estudante">Estudante</option>
+                  <option value="curioso">Curioso</option>
+                </optgroup>
+                <optgroup label="Experiente">
+                  <option value="dev">Desenvolvedor</option>
+                  <option value="professor">Professor</option>
+                </optgroup>
+              </select>
+            </p>
+            <p>
+              <label for="nivel">Nível (0 a 10)</label><br />
+              <input
+                id="nivel"
+                name="nivel"
+                type="range"
+                min="0"
+                max="10"
+                value="5"
+              />
+              <output for="nivel">5</output>
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Mensagem</legend>
+            <p>
+              <label for="assunto">Assunto</label><br />
+              <input id="assunto" name="assunto" type="text" />
+            </p>
+            <p>
+              <label for="mensagem">Mensagem</label><br />
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="4"
+                required
+              ></textarea>
+            </p>
+          </fieldset>
+
+          <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+          </p>
+        </form>
+      </section>
+
+      <section id="tabela" aria-labelledby="titulo-tabela">
+        <h2 id="titulo-tabela">Tabela de referência</h2>
+        <table>
+          <caption>
+            Categorias de tags usadas nesta página
+          </caption>
+          <colgroup>
+            <col span="1" />
+            <col span="1" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th scope="col">Categoria</th>
+              <th scope="col">Exemplos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Semânticas</th>
+              <td>header, nav, main, section, article, aside, footer</td>
+            </tr>
+            <tr>
+              <th scope="row">Texto</th>
+              <td>q, blockquote, code, pre, mark, ruby, sub, sup</td>
+            </tr>
+            <tr>
+              <th scope="row">Formulário</th>
+              <td>form, input, select, option, textarea, datalist, output</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2">
+                Total de estudo hoje: <time datetime="PT2H">2 horas</time>.
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <section aria-labelledby="titulo-midias">
+        <h2 id="titulo-midias">Mídias e gráficos</h2>
+        <p>Exemplos de elementos multimídia:</p>
+        <audio controls preload="none">
+          <source src="" type="audio/mpeg" />
+          Seu navegador não suporta áudio.
+        </audio>
+        <video controls width="300" height="170" preload="metadata">
+          <source src="" type="video/mp4" />
+          Seu navegador não suporta vídeo.
+        </video>
+        <svg
+          width="140"
+          height="70"
+          role="img"
+          aria-label="Retângulo azul de exemplo"
+        >
+          <rect x="5" y="5" width="130" height="60" fill="#4a90e2" />
+        </svg>
+        <canvas width="140" height="50"
+          >Canvas indisponível neste navegador.</canvas
+        >
+      </section>
+    </main>
+
+    <footer>
+      <p><small>&copy; 2026 Portal de Estudos HTML</small></p>
+      <address>
+        Contato: <a href="mailto:contato@exemplo.com">contato@exemplo.com</a
+        ><br />
+        Carapicuiba - SP
+      </address>
+    </footer>
+  </body>
+</html>
