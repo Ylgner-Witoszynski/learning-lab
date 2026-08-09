@@ -1,4 +1,4 @@
-# 🟢 Exercício 01 — Perfil Profissional
+# 🟢 Exercício 01 — Perfil Profissional 
 
 ## 🎯 Objetivo
 
