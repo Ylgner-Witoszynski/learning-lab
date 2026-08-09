@@ -94,7 +94,7 @@ GitHub: https://github.com/Ylgner-Witoszynski
 
 ### 🏁 Status
 
-📅 Última atualização: Fevereiro de 2026
+📅 Última atualização: Agosto de 2026
 
 📚 Em constante evolução — novos conteúdos serão adicionados conforme meus estudos avançam.
 
