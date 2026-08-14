@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Science</title>
+</head>
+
+<body>
+  <header id="topo">
+    <h1>Tech</h1>
+
+    <p>A ciência por trás das telas</p>
+
+    <nav>
+      <p>Menu de navegação</p>
+
+      <a href="#topo">Início</a> |
+      <a href="#artigo">Artigo</a> |
+      <a href="#conteudo">Conteúdo relacionado</a> |
+      <a href="#sobre">Sobre</a> |
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Artigo principal -->
+    <article id="artigo">
+
+      <header>
+        <h1>Como a internet leva uma página até você</h1>
+
+        <p>
+          Por Ylgner · Publicado em
+          <time datetime="2026-08-11">11 de agosto de 2026</time>
+        </p>
+      </header>
+
+      <!-- Introdução -->
+      <section>
+        <h2>Introdução</h2>
+
+        <p>
+          Abrir uma página parece uma ação imediata, mas envolve uma troca de
+          informações entre o dispositivo, a rede e diversos servidores.
+        </p>
+
+        <p>
+          Conhecer esse caminho ajuda quem está começando a desenvolver para a
+          web a entender como HTML, navegadores e conexões trabalham juntos.
+        </p>
+      </section>
+
+      <!-- DNS -->
+      <section>
+        <h2>O endereço encontra o servidor</h2>
+
+        <p>
+          Quando digitamos um endereço no navegador, o DNS procura o endereço
+          numérico do servidor que hospeda o site. É como consultar uma agenda
+          para encontrar o telefone de uma pessoa.
+        </p>
+
+        <p>
+          Depois disso, o navegador envia uma solicitação usando HTTP ou
+          HTTPS.
+        </p>
+
+        <h3>Etapas dessa busca</h3>
+
+        <ol>
+          <li>O navegador identifica o domínio solicitado.</li>
+          <li>O DNS informa o endereço IP correspondente.</li>
+          <li>
+            O navegador se conecta ao servidor e pede os arquivos.
+          </li>
+        </ol>
+      </section>
+
+      <!-- Arquivos -->
+      <section>
+        <h2>O navegador interpreta os arquivos</h2>
+
+        <p>
+          O servidor pode devolver HTML, CSS, JavaScript, imagens e fontes.
+          O HTML organiza o significado e a estrutura do conteúdo apresentado.
+        </p>
+
+        <p>
+          Em seguida, o navegador monta a página na tela e atualiza seus
+          elementos à medida que novos recursos ficam disponíveis.
+        </p>
+
+        <h3>Arquivos mais comuns</h3>
+
+        <ul>
+          <li>HTML: estrutura e conteúdo da página.</li>
+          <li>CSS: aparência e disposição dos elementos.</li>
+          <li>JavaScript: comportamentos e interações.</li>
+        </ul>
+      </section>
+
+      <!-- HTTPS -->
+      <section>
+        <h2>Por que o HTTPS é importante</h2>
+
+        <p>
+          O HTTPS protege a comunicação entre o navegador e o site usando
+          criptografia, reduzindo o risco de terceiros lerem ou alterarem os
+          dados durante a transmissão.
+        </p>
+
+        <p>
+          Por isso, vale conferir o endereço do site antes de informar senhas,
+          dados pessoais ou informações de pagamento.
+        </p>
+      </section>
+
+      <!-- Materiais -->
+      <section>
+        <h2>Onde continuar aprendendo</h2>
+
+        <p>
+          A documentação da
+          <a href="https://developer.mozilla.org/pt-BR/docs/Learn_web_development" target="_blank"
+            rel="noopener noreferrer">
+            MDN Web Docs
+          </a>
+          explica os fundamentos do desenvolvimento web com exemplos práticos.
+        </p>
+
+        <p>
+          Você também pode consultar a especificação do
+          <a href="https://html.spec.whatwg.org/" target="_blank" rel="noopener noreferrer">
+            HTML Living Standard
+          </a>
+          e os materiais sobre protocolos da
+          <a href="https://www.cloudflare.com/learning/" target="_blank" rel="noopener noreferrer">
+            Cloudflare Learning Center
+          </a>.
+        </p>
+      </section>
+
+      <!-- Imagem -->
+      <figure>
+        <img src="https://blog.hostone.com.br/wp-content/uploads/2018/12/o-que-e-servidor-dedicado.jpg.webp"
+          alt="Imagem ilustrativa de servidores" />
+
+        <figcaption>Servidores de empresa</figcaption>
+      </figure>
+
+    </article>
+
+    <!-- Conteúdo relacionado -->
+    <section id="conteudo">
+
+      <h2>Conteúdo relacionado</h2>
+
+      <!-- Áudio -->
+      <section>
+        <h3>Áudio para relaxar</h3>
+
+        <audio controls>
+          <source
+            src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=relaxing-mountains-rivers-113749.mp3"
+            type="audio/mpeg" />
+
+          Seu navegador não suporta o elemento de áudio.
+        </audio>
+      </section>
+
+      <!-- Vídeo -->
+      <section>
+        <h3>Vídeo de teste</h3>
+
+        <video controls width="320">
+          <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+            type="video/mp4" />
+
+          Seu navegador não suporta o elemento de vídeo.
+        </video>
+      </section>
+
+      <!-- YouTube -->
+      <section>
+        <h3>Vídeo do YouTube incorporado</h3>
+
+        <iframe src="https://www.youtube.com/embed/hcYTazzrGKo"
+          title="Palestra: No Dia da Internet Segura, como manter-se seguro na Internet!" width="560" height="315"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </section>
+
+      <!-- Conteúdo complementar -->
+      <aside>
+
+        <h2>Conteúdo complementar</h2>
+
+        <h3>Curiosidades</h3>
+
+        <ol>
+          <li>
+            O DNS funciona como uma agenda que associa domínios a endereços IP.
+          </li>
+
+          <li>
+            Uma página pode precisar de dezenas de arquivos antes de aparecer
+            completa.
+          </li>
+
+          <li>
+            Os dados percorrem vários equipamentos de rede até chegar ao
+            servidor.
+          </li>
+        </ol>
+
+        <h3>Informações adicionais</h3>
+
+        <ol>
+          <li>
+            O HTML organiza o conteúdo e define o significado dos elementos
+            da página.
+          </li>
+
+          <li>
+            O CSS controla cores, fontes, tamanhos e a disposição visual.
+          </li>
+
+          <li>
+            O JavaScript permite criar interações e atualizar conteúdos
+            dinamicamente.
+          </li>
+        </ol>
+
+        <h3>Você sabia?</h3>
+
+        <ul>
+          <li>
+            HTTPS usa criptografia para proteger os dados enviados e recebidos.
+          </li>
+
+          <li>
+            O cadeado no navegador indica que a conexão com o site está
+            protegida.
+          </li>
+
+          <li>
+            Um site mais leve costuma carregar mais rápido e consumir menos
+            dados.
+          </li>
+        </ul>
+
+      </aside>
+
+    </section>
+
+    <!-- Perguntas frequentes -->
+    <section>
+
+      <h2>Perguntas frequentes</h2>
+
+      <details open>
+        <summary>O que é HTML?</summary>
+
+        <p>
+          HTML é a linguagem usada para estruturar o conteúdo de uma página,
+          como títulos, parágrafos, imagens e links.
+        </p>
+      </details>
+
+      <details open>
+        <summary>Para que serve o CSS?</summary>
+
+        <p>
+          CSS serve para definir a aparência da página, incluindo cores,
+          fontes, tamanhos, espaçamentos e posicionamento dos elementos.
+        </p>
+      </details>
+
+      <details>
+        <summary>O que é JavaScript?</summary>
+
+        <p>
+          JavaScript é uma linguagem de programação que adiciona interatividade
+          às páginas, como menus, botões, formulários e animações.
+        </p>
+      </details>
+
+      <details>
+        <summary>O que é Front-end?</summary>
+
+        <p>
+          Front-end é a parte visual de um site ou aplicação com a qual a
+          pessoa usuária interage diretamente no navegador.
+        </p>
+      </details>
+
+    </section>
+
+    <!-- Tabela -->
+    <section>
+
+      <h2>Tabela de informações</h2>
+
+      <table border="1">
+
+        <thead>
+          <tr>
+            <th>Linguagem</th>
+            <th>Ano</th>
+            <th>Característica</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td>JavaScript</td>
+            <td>1995</td>
+            <td>Adiciona interatividade às páginas web.</td>
+          </tr>
+
+          <tr>
+            <td>Python</td>
+            <td>1991</td>
+            <td>É conhecida pela sintaxe simples e legível.</td>
+          </tr>
+
+          <tr>
+            <td>Java</td>
+            <td>1995</td>
+            <td>É muito usada em aplicações corporativas.</td>
+          </tr>
+
+          <tr>
+            <td>Ruby</td>
+            <td>1995</td>
+            <td>É popular no desenvolvimento web com Rails.</td>
+          </tr>
+
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="3">
+              Progresso atualizado em agosto de 2026.
+            </td>
+          </tr>
+        </tfoot>
+
+      </table>
+
+    </section>
+
+    <!-- Materiais úteis -->
+    <section>
+
+      <h2>Materiais úteis</h2>
+
+      <ul>
+
+        <li>
+          <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" rel="noopener noreferrer">
+            Documentação HTML da MDN
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.freecodecamp.org/portuguese/" target="_blank" rel="noopener noreferrer">
+            Plataforma de estudos freeCodeCamp
+          </a>
+        </li>
+
+        <li>
+          <a href="https://codepen.io/" target="_blank" rel="noopener noreferrer">
+            Ferramenta CodePen
+          </a>
+        </li>
+
+        <li>
+          <a href="https://stackoverflow.com/" target="_blank" rel="noopener noreferrer">
+            Comunidade Stack Overflow
+          </a>
+        </li>
+
+      </ul>
+
+    </section>
+
+    <!-- Citação -->
+    <blockquote>
+
+      <p>
+        "A web é para todos e deve ser acessível a todas as pessoas."
+      </p>
+
+      <cite>
+        — Tim Berners-Lee, inventor da World Wide Web
+      </cite>
+
+    </blockquote>
+
+    <!-- Sobre -->
+    <section id="sobre">
+
+      <h2>Sobre</h2>
+
+      <p>
+        Tech Science é uma página educativa sobre tecnologia e desenvolvimento
+        web.
+      </p>
+
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+
+      <h2>Contato</h2>
+
+      <p>
+        Nome: Ylgner W Santana
+      </p>
+
+      <p>
+        Email para contato:
+        <a href="mailto:ylgner.wsantana@gmail.com">
+          ylgner.wsantana@gmail.com
+        </a>
+      </p>
+
+      <p>
+        <a href="https://github.com/Ylgner-Witoszynski" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </p>
+
+      <p>
+        <a href="https://www.linkedin.com/in/ylgner-witoszynski-santana-613a631a1" target="_blank"
+          rel="noopener noreferrer">
+          LinkedIn
+        </a>
+      </p>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <p>
+      &copy; 2026 Tech Science. Conteúdo educativo sobre tecnologia e
+      desenvolvimento web.
+    </p>
+
+    <a href="#topo">
+      Voltar ao início
+    </a>
+
+  </footer>
+
+</body>
+
+</html>
