@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechBook Pro 15 - TechStore</title>
+</head>
+
+<body>
+
+    <!-- ==================== 1. CABEÇALHO ==================== -->
+    <header id="inicio">
+        <h1>TechStore</h1>
+        <p>Sua loja de tecnologia e inovação</p>
+
+        <nav>
+            <a href="#inicio">Início |</a>
+            <a href="#produto">Produto |</a>
+            <a href="#especificacoes">Especificações |</a>
+            <a href="#avaliacoes">Avaliações |</a>
+            <a href="#duvidas">Dúvidas |</a>
+            <a href="#entrega">Entrega |</a>
+            <a href="#compra">Comprar |</a>
+            <a href="#galeria">Galeria |</a>
+            <a href="#multimidia">Multimídia |</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- ==================== 2. APRESENTAÇÃO DO PRODUTO ==================== -->
+    <main>
+        <section id="produto">
+            <h2>TechBook Pro 15</h2>
+            <p>Notebook desenvolvido especialmente para estudantes e profissionais de tecnologia que buscam alta
+                performance, portabilidade e excelente custo-benefício.</p>
+
+            <img src="https://via.placeholder.com/600x400?text=TechBook+Pro+15"
+                alt="Notebook TechBook Pro 15 aberto sobre uma mesa de trabalho exibindo linhas de código na tela">
+
+            <!--
+        ELEMENTO PESQUISADO 1: <mark>
+        Pesquisei sobre o elemento <mark> e descobri que ele serve para destacar visualmente trechos de texto que possuem relevância contextual imediata (como uma oferta especial ou termo buscado).
+      -->
+            <p><strong>Preço:</strong> R$ 4.599,00 <mark>OFERTA ESPECIAL</mark></p>
+            <p><strong>Parcelamento:</strong> Em até 10x de R$ 459,90 sem juros no cartão</p>
+
+            <!--
+        ELEMENTO PESQUISADO 2: <meter>
+        Pesquisei sobre o elemento <meter> e descobri que ele serve para representar graficamente uma medida escalar dentro de uma faixa conhecida ou um valor fracionário (como estoque, porcentagem de disco, etc.).
+      -->
+            <p>
+                <strong>Disponibilidade:</strong> Em estoque
+                (<meter value="8" min="0" max="10" low="3" high="8" optimum="10">8 de 10</meter> - Últimas unidades!)
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- ==================== 3. ESPECIFICAÇÕES TÉCNICAS ==================== -->
+        <section id="especificacoes">
+            <h2>Especificações Técnicas</h2>
+
+            <table border="1">
+                <caption>Ficha Técnica do TechBook Pro 15</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Componente</th>
+                        <th scope="col">Especificação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <!-- O atributo scope="row" indica que o cabeçalho <th> se refere a toda a linha correspondente -->
+                        <th scope="row">Processador</th>
+                        <td>Intel Core i7 13ª Geração (10 cores, até 4.7 GHz)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Memória RAM</th>
+                        <td>16 GB DDR5 4800MHz (Expansível até 32 GB)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Armazenamento</th>
+                        <td>512 GB SSD NVMe M.2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tela</th>
+                        <td>15.6" Full HD (1920x1080) IPS Antirreflexo 120Hz</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Sistema Operacional</th>
+                        <td>Linux Ubuntu 22.04 LTS (ou Windows 11 Pro)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Peso</th>
+                        <td>1,65 kg</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Bateria</th>
+                        <td>57 Wh (Autonomia de até 10 horas de uso contínuo)</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row">Garantia</th>
+                        <td>12 meses</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- ==================== 4. AVALIAÇÕES ==================== -->
+        <section id="avaliacoes">
+            <h2>Avaliações dos Clientes</h2>
+
+            <article>
+                <h3>Lucas Silva</h3>
+                <!--
+          ELEMENTO PESQUISADO 3: <data>
+          Pesquisei sobre o elemento <data> e descobri que ele serve para associar um valor legível para humanos a um valor traduzível para máquinas/scripts através do atributo "value", ideal para representar avaliações numéricas ou códigos.
+        -->
+                <p><strong>Nota:</strong> <data value="5.0">5.0 / 5.0 ★★★★★</data></p>
+                <p><q>Excelente notebook! Roda Docker, VS Code e múltiplos containers sem engasgar. A bateria dura o dia
+                        todo na faculdade.</q></p>
+                <p>Data: <time datetime="2026-01-15">15 de Janeiro de 2026</time></p>
+            </article>
+
+            <article>
+                <h3>Mariana Costa</h3>
+                <p><strong>Nota:</strong> <data value="4.5">4.5 / 5.0 ★★★★☆</data></p>
+                <p><q>Muito leve e a tela tem ótimos ângulos de visão. Apenas a webcam poderia ter uma resolução um
+                        pouco melhor, mas cumpre bem o papel.</q></p>
+                <p>Data: <time datetime="2026-02-02">02 de Fevereiro de 2026</time></p>
+            </article>
+
+            <article>
+                <h3>Carlos Eduardo</h3>
+                <p><strong>Nota:</strong> <data value="5.0">5.0 / 5.0 ★★★★★</data></p>
+                <p><q>Entrega rápida e produto muito bem embalado. O teclado é extremamente confortável para digitar por
+                        horas seguidas.</q></p>
+                <p>Data: <time datetime="2026-02-10">10 de Fevereiro de 2026</time></p>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- ==================== 5. PERGUNTAS FREQUENTES ==================== -->
+        <section id="duvidas">
+            <h2>Dúvidas Frequentes</h2>
+
+            <details>
+                <summary>O produto possui garantia?</summary>
+                <p>Sim! O TechBook Pro 15 possui 12 meses de garantia total de fábrica contra defeitos de fabricação.
+                </p>
+            </details>
+
+            <details>
+                <summary>Qual é o prazo de entrega?</summary>
+                <p>O prazo varia de 3 a 8 dias úteis, dependendo do CEP informado no momento da compra.</p>
+            </details>
+
+            <details>
+                <summary>É possível aumentar a memória RAM?</summary>
+                <p>Sim, o notebook possui um slot expansível que suporta até 32 GB de memória RAM DDR5.</p>
+            </details>
+
+            <details>
+                <summary>O produto acompanha carregador?</summary>
+                <p>Sim, acompanha um carregador rápido USB-C de 65W na caixa e manual do usuário.</p>
+            </details>
+
+            <details>
+                <summary>Qual sistema operacional está instalado?</summary>
+                <p>Por padrão, enviamos com Linux Ubuntu 22.04 LTS pré-instalado, mas você pode optar pelo Windows 11
+                    Pro na hora do checkout.</p>
+            </details>
+        </section>
+
+        <hr>
+
+        <!-- ==================== 6. INFORMAÇÕES DE ENTREGA ==================== -->
+        <section id="entrega">
+            <h2>Informações de Entrega e Garantia</h2>
+
+            <!-- Uso de <dl> (Lista de Definição/Descrição) para chave/valor e termos/explicações -->
+            <dl>
+                <dt><strong>Prazo de Entrega:</strong></dt>
+                <dd>Capital e regiões metropolitanas: de 2 a 4 dias úteis. Demais localidades: de 5 a 10 dias úteis.
+                </dd>
+
+                <dt><strong>Regiões Atendidas:</strong></dt>
+                <dd>Entregamos em todo o território nacional via transportadora parceira ou Correios com código de
+                    rastreamento.</dd>
+
+                <dt><strong>Política de Devolução:</strong></dt>
+                <dd>Você pode solicitar a devolução gratuita ou troca do produto em até 7 dias corridos após o
+                    recebimento, conforme o Código de Defesa do Consumidor.</dd>
+
+                <dt><strong>Garantia do Produto:</strong></dt>
+                <dd>Garantia de 1 ano com suporte técnico nacional especializado e opção de suporte em domicílio.</dd>
+            </dl>
+        </section>
+
+        <hr>
+
+        <!-- ==================== 7 e 8. FORMULÁRIO DE COMPRA & NOVOS INPUTS ==================== -->
+        <section id="compra">
+            <h2>Formulário de Compra</h2>
+
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Dados do Cliente</legend>
+                    <p>
+                        <label for="nome">Nome Completo:</label><br>
+                        <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+                    </p>
+                    <p>
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com">
+                    </p>
+                    <p>
+                        <!-- NOVO INPUT 1: tel -->
+                        <label for="telefone">Telefone / WhatsApp:</label><br>
+                        <input type="tel" id="telefone" name="telefone" required placeholder="(11) 99999-9999">
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Endereço de Entrega</legend>
+                    <p>
+                        <label for="cep">CEP:</label><br>
+                        <input type="text" id="cep" name="cep" required placeholder="00000-000">
+                    </p>
+                    <p>
+                        <label for="rua">Rua / Avenida:</label><br>
+                        <input type="text" id="rua" name="rua" required placeholder="Nome da rua">
+                    </p>
+                    <p>
+                        <label for="numero">Número:</label><br>
+
+                        <input type="text" id="numero" name="numero" inputmode="numeric" required placeholder="123">
+                    </p>
+                    <p>
+                        <label for="complemento">Complemento:</label><br>
+                        <input type="text" id="complemento" name="complemento" placeholder="Apto, Bloco, etc.">
+                    </p>
+                    <p>
+                        <label for="cidade">Cidade:</label><br>
+                        <input type="text" id="cidade" name="cidade" required placeholder="Sua cidade">
+                    </p>
+                    <p>
+                        <label for="estado">Estado:</label><br>
+                        <select id="estado" name="estado" required>
+                            <option value="">Selecione o Estado</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PR">Paraná</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="OUTRO">Outro</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Detalhes do Pedido</legend>
+                    <p>
+                        <label for="produto_select">Produto:</label><br>
+                        <input type="text" id="produto_select" name="produto_select" value="TechBook Pro 15" readonly>
+                    </p>
+                    <p>
+                        <label for="quantidade">Quantidade:</label><br>
+
+                        <select name="quantidade" id="quantidade">
+                            <option value="0" selected disabled>Selecione uma das opções...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </p>
+                    <p>
+                        <!-- NOVO INPUT 4: color -->
+                        <label for="cor">Escolha a Cor da LED do Teclado:</label><br>
+                        <input type="color" id="cor" name="cor" value="#0000ff">
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Forma de Pagamento</legend>
+                    <p>
+                        <input type="radio" id="cartao" name="pagamento" value="cartao" checked>
+                        <label for="cartao">Cartão de Crédito</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="pix" name="pagamento" value="pix">
+                        <label for="pix">Pix (com 5% de desconto)</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="boleto" name="pagamento" value="boleto">
+                        <label for="boleto">Boleto Bancário</label>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <button type="submit">Finalizar Compra</button>
+                <button type="reset">Limpar Formulário</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- ==================== 9. GALERIA DO PRODUTO ==================== -->
+        <section id="galeria">
+            <h2>Galeria do Produto</h2>
+
+            <!-- Uso semântico de <figure> e <figcaption> -->
+            <figure>
+                <img src="https://via.placeholder.com/600x400?text=TechBook+Pro+15"
+                    alt="Visão frontal do notebook TechBook Pro 15 aberto com tela ligada">
+                <figcaption>Figura 1: Visão frontal do TechBook Pro 15 em funcionamento.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://via.placeholder.com/400x250?text=Teclado+e+Touchpad"
+                    alt="Detalhe em close-up do teclado retroiluminado e do touchpad amplo">
+                <figcaption>Figura 2: Teclado ergonômico e touchpad de alta precisão.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://via.placeholder.com/400x250?text=Entradas+e+Conectividade"
+                    alt="Visão lateral das portas de conexão do notebook incluindo HDMI e USB-C">
+                <figcaption>Figura 3: Conectividade completa com HDMI, USB-C e leitor de cartões.</figcaption>
+            </figure>
+        </section>
+
+        <hr>
+
+        <!-- ==================== 10. CONTEÚDO MULTIMÍDIA ==================== -->
+        <section id="multimidia">
+            <h2>Conteúdo Multimídia</h2>
+
+            <article>
+                <h3>Vídeo de Apresentação</h3>
+                <video controls width="560" poster="https://via.placeholder.com/560x315?text=Capa+do+Video">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Seu navegador não suporta a tag de vídeo.
+                </video>
+            </article>
+
+            <br>
+
+            <article>
+                <h3>Áudio: Análise do Produto (Podcast)</h3>
+                <audio controls>
+                    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                    Seu navegador não suporta a tag de áudio.
+                </audio>
+            </article>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- ==================== 11. RODAPÉ ==================== -->
+    <footer>
+        <section id="contato">
+            <p><strong>TechStore</strong> — © 2026 Todos os direitos reservados.</p>
+
+            <ul>
+                <li><a href="#inicio">Voltar ao topo ↑</a></li>
+                <li><a href="mailto:contato@techstore.com.br">Contato por E-mail</a></li>
+                <li><a href="https://exemplo.com/privacidade" target="_blank" rel="noopener noreferrer">Política de
+                        Privacidade</a></li>
+                <li><a href="https://exemplo.com/termos" target="_blank" rel="noopener noreferrer">Termos de Uso</a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+
+</body>
+
+</html>
