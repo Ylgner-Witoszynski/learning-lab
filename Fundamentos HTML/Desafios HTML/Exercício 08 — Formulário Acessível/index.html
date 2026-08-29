@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte técnico</title>
+</head>
+
+<body>
+    <header>
+        <h1>Suporte técnico</h1>
+        <p>Preencha o formulário para solicitar atendimento.</p>
+
+        <nav aria-label="Navegação principal">
+            <a href="#formulario">Abrir chamado</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="formulario" aria-labelledby="titulo-formulario">
+            <h2 id="titulo-formulario">Formulário de atendimento</h2>
+            <p>Os campos marcados como obrigatórios devem ser preenchidos.</p>
+
+            <!--
+O HTML semântico deve ser priorizado porque elementos como form, label,
+fieldset, legend, button e input já possuem significado e comportamentos
+reconhecidos por navegadores e tecnologias assistivas.
+
+ARIA deve ser utilizada principalmente quando o HTML padrão não consegue
+fornecer a informação necessária. Neste formulário, labels corretamente
+associados identificam os campos e o atributo required já informa quando
+um campo é obrigatório, evitando o uso desnecessário de aria-label ou
+aria-required.
+-->
+            <form action="#" method="post">
+                <p>
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" autocomplete="name" required>
+                </p>
+
+                <p>
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </p>
+
+                <p>
+                    <label for="assunto">Assunto:</label><br>
+                    <input type="text" id="assunto" name="assunto" required>
+                </p>
+
+                <p>
+                    <label for="tipo-problema">Tipo de problema:</label><br>
+                    <select id="tipo-problema" name="tipo-problema" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="acesso">Problema de acesso</option>
+                        <option value="erro-tecnico">Erro técnico</option>
+                        <option value="duvida">Dúvida sobre o sistema</option>
+                        <option value="pagamento">Problema com pagamento</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="descricao">Descrição do problema:</label><br>
+                    <textarea id="descricao" name="descricao" rows="6" aria-describedby="ajuda-descricao"
+                        required></textarea><br>
+                    <small id="ajuda-descricao">Explique o problema com o máximo de detalhes possível.</small>
+                </p>
+
+                <fieldset>
+                    <legend>Qual é a prioridade do problema?</legend>
+
+                    <input type="radio" id="prioridade-baixa" name="prioridade" value="baixa" required>
+                    <label for="prioridade-baixa">Baixa</label>
+
+                    <input type="radio" id="prioridade-media" name="prioridade" value="media">
+                    <label for="prioridade-media">Média</label>
+
+                    <input type="radio" id="prioridade-alta" name="prioridade" value="alta">
+                    <label for="prioridade-alta">Alta</label>
+                </fieldset>
+
+                <p>
+                    <input type="checkbox" id="confirmacao" name="confirmacao" required>
+                    <label for="confirmacao">Confirmo que as informações fornecidas estão corretas.</label>
+                </p>
+
+                <button type="submit">Enviar solicitação</button>
+            </form>
+
+            <!--
+Esta região está preparada para receber mensagens dinâmicas do formulário,
+como confirmação de envio ou mensagens de erro. O aria-live="polite"
+permite que leitores de tela sejam informados sobre alterações sem
+interromper imediatamente a pessoa usuária.
+-->
+            <p id="mensagem" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Suporte técnico &copy; 2026</p>
+    </footer>
+</body>
+
+</html>
