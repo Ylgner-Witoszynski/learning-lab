@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech News Brasil</title>
+</head>
+
+<body>
+    <header id="inicio">
+        <nav aria-label="Navegação principal">
+            <a href="#inicio">Início</a> |
+            <a href="#noticias">Notícias</a> |
+            <a href="#destaques">Destaques</a> |
+            <a href="#contato">Contato</a>
+        </nav>
+        <h1>Tech News Brasil</h1>
+        <p><em>As principais novidades do mercado de tecnologia em um só lugar.</em></p>
+    </header>
+
+    <hr>
+
+    <!-- O main identifica o conteúdo principal e exclusivo desta página. -->
+    <main>
+        <!--
+            Usei section porque ela reúne um tema da página: as notícias recentes.
+            O título da seção ajuda a identificar esse grupo no conteúdo.
+
+            Usei article em cada notícia porque ela tem sentido completo sozinha.
+            Assim, cada uma poderia ser lida, compartilhada ou publicada em outro lugar
+            sem depender das outras notícias para ser entendida.
+        -->
+        <section id="noticias" aria-labelledby="titulo-noticias">
+            <h2 id="titulo-noticias">Notícias recentes</h2>
+
+            <article>
+                <h3>Inteligência artificial transforma a rotina de desenvolvedores</h3>
+                <p><strong>Ferramentas de IA estão acelerando tarefas repetitivas e abrindo espaço para decisões mais
+                        criativas.</strong></p>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                        alt="Ilustração de inteligência artificial com conexões luminosas">
+                    <figcaption>O uso responsável de IA vem ganhando espaço nas equipes de tecnologia.</figcaption>
+                </figure>
+                <p>Assistentes de código, revisores automáticos e ferramentas de documentação ajudam profissionais a
+                    reduzir o tempo gasto em tarefas operacionais.</p>
+                <p>Especialistas reforçam, porém, que a revisão humana continua essencial para garantir segurança,
+                    qualidade e contexto nas entregas.</p>
+                <p>Publicado em <time datetime="2026-08-25">25 de agosto de 2026</time>.</p>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Glossary/AI" target="_blank"
+                    rel="noopener noreferrer">Saiba mais sobre inteligência artificial</a>
+            </article>
+
+            <article>
+                <h3>Novos recursos do CSS deixam interfaces mais flexíveis</h3>
+                <p><strong>Recursos modernos facilitam a criação de layouts responsivos e acessíveis na web.</strong>
+                </p>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                        alt="Tela de computador exibindo linhas de código para desenvolvimento web">
+                    <figcaption>O CSS permite adaptar páginas a diferentes tamanhos de tela.</figcaption>
+                </figure>
+                <p>Com ferramentas como Grid, Flexbox e consultas de contêiner, desenvolvedores conseguem organizar
+                    componentes de maneira mais previsível.</p>
+                <p>Além de melhorar a aparência, um bom layout contribui para uma navegação mais confortável em
+                    celulares, tablets e computadores.</p>
+                <p>Publicado em <time datetime="2026-08-22">22 de agosto de 2026</time>.</p>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank"
+                    rel="noopener noreferrer">Confira a documentação sobre CSS</a>
+            </article>
+
+            <article>
+                <h3>Segurança digital começa com hábitos simples</h3>
+                <p><strong>Senhas exclusivas e autenticação em duas etapas são medidas importantes para proteger
+                        contas.</strong></p>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                        alt="Pessoa utilizando um notebook com um ícone de cadeado representando segurança digital">
+                    <figcaption>Pequenas práticas podem aumentar a proteção dos dados pessoais.</figcaption>
+                </figure>
+                <p>Reutilizar a mesma senha em vários serviços aumenta o impacto de um possível vazamento. Gerenciadores
+                    de senhas podem ajudar a criar e guardar combinações fortes.</p>
+                <p>Também é recomendado desconfiar de mensagens urgentes que solicitam dados pessoais e confirmar a
+                    origem antes de clicar em links.</p>
+                <p>Publicado em <time datetime="2026-08-19">19 de agosto de 2026</time>.</p>
+                <a href="https://www.cisa.gov/secure-our-world" target="_blank" rel="noopener noreferrer">Veja dicas de
+                    segurança digital</a>
+            </article>
+        </section>
+
+
+        <!-- O aside reúne links e informações relacionadas, mas que não são parte de uma notícia. -->
+        <aside id="destaques" aria-labelledby="titulo-destaques">
+            <h2 id="titulo-destaques">Conteúdo complementar</h2>
+            <p>Confira também estes materiais para continuar aprendendo sobre tecnologia:</p>
+            <ul>
+                <li><a href="https://developer.mozilla.org/pt-BR/docs/Learn_web_development" target="_blank"
+                        rel="noopener noreferrer">Como começar no desenvolvimento web</a></li>
+                <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank"
+                        rel="noopener noreferrer">JavaScript para páginas interativas</a></li>
+                <li><a href="https://www.cisa.gov/secure-our-world" target="_blank" rel="noopener noreferrer">Princípios
+                        de
+                        segurança digital</a></li>
+                <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank"
+                        rel="noopener noreferrer">Estruture páginas com HTML</a></li>
+            </ul>
+        </aside>
+    </main>
+
+
+    <footer id="contato">
+        <!-- O address reúne os dados de contato do portal, e não o endereço de uma notícia específica. -->
+        <address>
+            <h2>Contato</h2>
+            <p>Tech News Brasil</p>
+            <p>
+                E-mail:
+                <a href="mailto:contato@technewsbrasil.com">contato@technewsbrasil.com</a>
+            </p>
+            <p>São Paulo, Brasil</p>
+        </address>
+
+        <p>&copy; 2026 Tech News Brasil. Todos os direitos reservados.</p>
+        <p><a href="#inicio">Voltar ao início</a></p>
+    </footer>
+
+    <!--
+        A página possui navegação identificada, um único conteúdo principal, títulos em ordem lógica,
+        links descritivos e imagens com texto alternativo. Esses recursos ajudam quem usa leitor de tela
+        a localizar as áreas da página e compreender cada notícia.
+    -->
+</body>
+
+</html>
