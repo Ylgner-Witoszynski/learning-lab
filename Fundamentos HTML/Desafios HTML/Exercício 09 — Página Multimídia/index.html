@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Uma página introdutória sobre exploração espacial, criada apenas com HTML."
+    />
+    <title>Exploração Espacial | Além da Órbita</title>
+  </head>
+
+  <body>
+    <header id="inicio">
+      <p>Além da Órbita</p>
+      <h1>Exploração espacial: descobrindo novos mundos</h1>
+      <p>
+        Uma viagem pelos principais destinos, tecnologias e curiosidades da
+        exploração do <strong>Universo</strong>.
+      </p>
+
+      <nav aria-label="Navegação principal">
+        <a href="#destinos">Destinos</a>
+        <a href="#missoes">Missões</a>
+        <a href="#midia">Multimídia</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="destinos" aria-labelledby="titulo-destinos">
+        <h2 id="titulo-destinos">Destinos que inspiram a humanidade</h2>
+
+        <article>
+          <h3>Marte, o planeta vermelho</h3>
+          <p>
+            Marte é um dos destinos mais estudados porque apresenta sinais de
+            que já teve água líquida em sua superfície. Entender sua história
+            pode ajudar a responder se <em>alguma forma de vida</em> já existiu
+            fora da Terra.
+          </p>
+
+          <!--
+            figure reúne um conteúdo independente (a imagem) e sua descrição.
+            Isso mantém a legenda semanticamente associada à imagem, mesmo se a
+            figure for movida para outra parte da página.
+          -->
+          <figure>
+            <img
+              src="https://images-assets.nasa.gov/image/PIA00407/PIA00407~orig.jpg"
+              alt="Planeta Marte visto do espaço, com tons avermelhados e áreas escuras em sua superfície"
+              width="600"
+            />
+            <!-- figcaption fornece a legenda que identifica e contextualiza a imagem da figure. -->
+            <figcaption>
+              Marte fotografado pela missão Viking Orbiter 1. Imagem: NASA.
+            </figcaption>
+          </figure>
+        </article>
+
+        <article>
+          <h3>O que uma missão espacial precisa fazer?</h3>
+          <ol>
+            <li>Definir o objetivo científico da missão.</li>
+            <li>Projetar e testar a nave ou o robô explorador.</li>
+            <li>Lançar o equipamento e acompanhar sua trajetória.</li>
+            <li>Coletar, transmitir e analisar os dados obtidos.</li>
+          </ol>
+        </article>
+
+        <article>
+          <h3>Tecnologias importantes</h3>
+          <ul>
+            <li>Foguetes para vencer a gravidade terrestre.</li>
+            <li>Satélites para comunicação e observação.</li>
+            <li>Rovers para explorar terrenos distantes.</li>
+            <li>Telescópios para observar objetos muito afastados.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="missoes" aria-labelledby="titulo-missoes">
+        <h2 id="titulo-missoes">Missões marcantes</h2>
+        <table>
+          <caption>
+            Alguns marcos da exploração espacial
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Missão</th>
+              <th scope="col">Ano</th>
+              <th scope="col">Principal conquista</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sputnik 1</td>
+              <td>1957</td>
+              <td>Primeiro satélite artificial em órbita.</td>
+            </tr>
+            <tr>
+              <td>Apollo 11</td>
+              <td>1969</td>
+              <td>Primeira chegada de seres humanos à Lua.</td>
+            </tr>
+            <tr>
+              <td>Voyager 1</td>
+              <td>1977</td>
+              <td>Estudo dos planetas externos e do espaço interestelar.</td>
+            </tr>
+            <tr>
+              <td>James Webb</td>
+              <td>2021</td>
+              <td>Observação do Universo em luz infravermelha.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          Quer se aprofundar? Visite a
+          <a
+            href="https://www.nasa.gov/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            página oficial da NASA (abre em nova aba)</a>.
+        </p>
+      </section>
+
+      <section id="midia" aria-labelledby="titulo-midia">
+        <h2 id="titulo-midia">Multimídia</h2>
+
+        <article>
+          <h3>Áudio de exemplo</h3>
+          <!--
+            source informa o arquivo e seu tipo. Com mais de um source, o
+            navegador percorre a lista e reproduz o primeiro formato compatível.
+          -->
+          <audio controls>
+            <source
+              src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"
+              type="audio/mpeg"
+            />
+            <source
+              src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.ogg"
+              type="audio/ogg"
+            />
+            Seu navegador não suporta o elemento de áudio.
+          </audio>
+        </article>
+
+        <article>
+          <h3>Vídeo de exemplo</h3>
+          <video controls width="600">
+            <source
+              src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+              type="video/mp4"
+            />
+            <source
+              src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+              type="video/webm"
+            />
+            Seu navegador não suporta o elemento de vídeo.
+          </video>
+          <p>
+            O elemento <code>&lt;video&gt;</code> reproduz um arquivo de vídeo
+            diretamente na página. Já o <code>&lt;iframe&gt;</code> incorpora
+            outra página, como um vídeo hospedado no YouTube.
+          </p>
+        </article>
+
+        <article>
+          <h3>Uma visão da Terra</h3>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/GO5FwsblpT8"
+            title="Vídeo sobre a visão da Terra a partir do espaço"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </article>
+      </section>
+
+      <aside>
+        <h2>Curiosidade</h2>
+        <p>
+          A luz do Sol leva aproximadamente <strong>8 minutos e 20 segundos</strong>
+          para chegar à Terra.
+        </p>
+      </aside>
+
+      <section aria-labelledby="titulo-faq">
+        <h2 id="titulo-faq">Pergunta frequente</h2>
+        <details>
+          <summary>Por que exploramos o espaço?</summary>
+          <p>
+            A exploração espacial amplia o conhecimento científico, impulsiona
+            novas tecnologias e ajuda a compreender melhor o nosso próprio planeta.
+          </p>
+        </details>
+      </section>
+
+      <section id="contato" aria-labelledby="titulo-contato">
+        <h2 id="titulo-contato">Receba novidades cósmicas</h2>
+        <p>Conte qual tema espacial mais desperta sua curiosidade.</p>
+
+        <form action="#contato" method="post">
+          <p>
+            <label for="nome">Nome:</label><br />
+            <input type="text" id="nome" name="nome" required />
+          </p>
+
+          <p>
+            <label for="email">E-mail:</label><br />
+            <input type="email" id="email" name="email" required />
+          </p>
+
+          <p>
+            <label for="tema">Tema favorito:</label><br />
+            <select id="tema" name="tema" required>
+              <option value="">Selecione uma opção</option>
+              <option value="planetas">Planetas</option>
+              <option value="foguetes">Foguetes</option>
+              <option value="telescopios">Telescópios</option>
+            </select>
+          </p>
+
+          <fieldset>
+            <legend>Você gostaria de receber novidades?</legend>
+            <input type="radio" id="novidades-sim" name="novidades" value="sim" required />
+            <label for="novidades-sim">Sim</label>
+            <input type="radio" id="novidades-nao" name="novidades" value="nao" />
+            <label for="novidades-nao">Não</label>
+          </fieldset>
+
+          <p>
+            <input type="checkbox" id="termos" name="termos" required />
+            <label for="termos">Concordo em enviar meus dados para este exercício.</label>
+          </p>
+
+          <p>
+            <label for="mensagem">Sua mensagem:</label><br />
+            <textarea id="mensagem" name="mensagem" rows="5" cols="40" required></textarea>
+          </p>
+
+          <button type="submit">Enviar mensagem</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Página criada para o Exercício 09 de HTML. Voltar ao
+        <a href="#inicio">início da página</a>.
+      </p>
+    </footer>
+  </body>
+</html>
