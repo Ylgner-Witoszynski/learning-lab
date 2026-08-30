@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Entre em contato com a DevTech Solutions." />
+  <title>DevTech Solutions | Contato</title>
+</head>
+
+<body>
+  <header>
+    <p>DevTech Solutions</p>
+    <h1>Contato</h1>
+    <nav aria-label="Navegação principal"><a href="index.html">Início</a> <a href="sobre.html">Sobre</a> <a
+        href="servicos.html">Serviços</a> <a href="cursos.html">Cursos</a> <a href="contato.html"
+        aria-current="page">Contato</a></nav>
+  </header>
+  <main>
+    <section aria-labelledby="fale-conosco">
+      <h2 id="fale-conosco">Vamos conversar</h2>
+      <!-- address representa os dados de contato da organização, não qualquer endereço postal genérico. -->
+      <address>DevTech Solutions<br />Avenida Paulista, 1000 — Bela Vista, São Paulo — SP<br /><a
+          href="mailto:contato@devtechsolutions.com.br">contato@devtechsolutions.com.br</a><br /><a
+          href="tel:+551130301010">(11) 3030-1010</a></address>
+      <p>Atendimento: segunda a sexta, das <time datetime="09:00">9h</time> às <time datetime="18:00">18h</time>.</p>
+    </section>
+    <section aria-labelledby="titulo-formulario">
+      <h2 id="titulo-formulario">Envie sua mensagem</h2>
+      <!-- Primeiro usamos elementos nativos com significado e rótulos; ARIA é complementar e não substitui a semântica do HTML. -->
+      <form action="#titulo-formulario" method="post" enctype="multipart/form-data">
+        <p><label for="nome">Nome:</label><br /><input id="nome" name="nome" type="text" autocomplete="name" required />
+        </p>
+        <p><label for="email">E-mail:</label><br /><input id="email" name="email" type="email" autocomplete="email"
+            required /></p>
+        <p><label for="telefone">Telefone:</label><br /><input id="telefone" name="telefone" type="tel"
+            autocomplete="tel" required /></p>
+        <p><label for="pessoas">Pessoas no projeto:</label><br /><input id="pessoas" name="pessoas" type="number"
+            min="1" required /></p>
+        <p><label for="data">Data desejada para contato:</label><br /><input id="data" name="data" type="date"
+            required /></p>
+        <p><label for="servico">Serviço de interesse:</label><br /><select id="servico" name="servico" required>
+            <option value="">Selecione</option>
+            <option>Desenvolvimento de sites</option>
+            <option>Sistemas</option>
+            <option>Consultoria</option>
+            <option>Cursos</option>
+          </select></p>
+        <fieldset>
+          <legend>Como prefere ser contatado?</legend><input id="por-email" name="preferencia" type="radio"
+            value="email" required /><label for="por-email">E-mail</label><input id="por-telefone" name="preferencia"
+            type="radio" value="telefone" /><label for="por-telefone">Telefone</label>
+        </fieldset>
+        <p><input id="novidades" name="novidades" type="checkbox" /><label for="novidades">Aceito receber novidades da
+            DevTech.</label></p>
+        <p><label for="arquivo">Anexe um briefing (opcional):</label><br /><input id="arquivo" name="arquivo"
+            type="file" accept=".pdf,.doc,.docx" aria-describedby="ajuda-arquivo" /><small id="ajuda-arquivo">Formatos
+            aceitos: PDF, DOC ou DOCX.</small></p>
+        <p><label for="mensagem">Mensagem:</label><br /><textarea id="mensagem" name="mensagem" rows="6" cols="45"
+            required></textarea></p><button type="submit">Enviar mensagem</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>DevTech Solutions · <a href="index.html">Início</a> · <a href="mailto:contato@devtechsolutions.com.br">E-mail</a>
+    </p>
+  </footer>
+</body>
+
+</html>
